@@ -1,0 +1,200 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    .ec-base-product {margin-top:0;    padding-bottom: 1px;}
+  .path {  text-indent: 0; font-size: 11px;  }
+    .path span { overflow:hidden; position:absolute; width:0; height:0; white-space:nowrap; text-indent:100%; }
+    .path ol { float:right; }
+    .path li { float:left; padding:0 0 0 12px; margin:0 0 0 8px; color:#757575; background:url("//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design119/ico_path1.png") no-repeat 0 center; }
+    .path li:first-child { background:none; }
+    .path li a { color:#e0e0e0; }
+    .path li strong,
+    .path li strong a { color:#2e2e2e; }
+    #contents {
+    width: 75%; margin:0 auto;
+}
+    .ec-base-product-movie .prdList>li .pro-list-info-wrap {width:100%;}
+    .contents-wrap {margin-top: 132px;}
+    .ec-base-product-movie .prdList>li .pro-list-info-wrap {padding-left:0;}
+    .ec-base-product-movie .prdList>li .buy-btn {    margin-top: 26px;}
+    .ec-base-product-movie .prdList>li .pro-list-info-wrap .name {    margin-bottom: 16px;}
+    .ec-base-product-movie .prdList>li .pro-list-info-wrap .name span {    font-size: 22px !important;}
+    .ec-base-product-movie .prdList .thumbnail a img {   }
+    .ec-base-product-movie .prdList .thumbnail {margin:0; text-align:left;    margin-bottom: 32px;}
+    .ec-base-product-movie .prdList>li .information-wrap {    width: 27%;
+    background: #f3f3f3;
+    padding: 2%;
+    margin-top: 0px;}
+    .ec-base-product-movie .prdList>li {      margin-bottom: 0px;
+    margin-top: 34px;
+    /* border-bottom: 1px solid #d4d4d4; */
+    /* padding-bottom: 50px; */
+    background: #f9f9f9;
+}
+    .ec-base-product-movie .prdList>li .information-wrap { }
+    .ec-base-product-movie .prdList>li .video-custom-com {   width: 69%;}
+    .xans-product-menupackage {
+   
+}
+    </style>
+<div module="Product_menupackage">
+    <!--@css(/css/module/product/menupackage.css)-->
+    <!--@js(/js/module/product/menucategory.js)-->
+
+
+    <div class="title" module="product_headcategory">
+        <p class="banner">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</p>
+        <h2><span>{$title_text_or_image}</span></h2>
+     
+    </div>
+
+    <ul class="menuCategory">
+
+        <li module="product_displaycategory" style="display:{$display};" class="{$selected}">
+            <a href="{$link_product_list_sub}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+
+    <div module="product_listnormal" class="ec-base-product-movie">
+        <!--
+            $count = 6
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+   
+                  <ul class="prdList grid3">
+                    <li id="anchorBoxId_{$product_no}">
+
+
+                      <div class="information-wrap">
+
+
+                        <div class="pro-list-info-wrap">
+                            
+                            
+                            <div class="thumbnail">
+                                  <div class="prdImg">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
+                                  </div><!--prdImg-->
+          			        </div><!--thumbnail -->
+                            
+                   
+                          <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                          <div class="name">
+                            <div class="name-txt"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+
+
+
+                          </div>
+                          <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                          </ul>
+
+                          <p class="buy-btn"><a href="{$link_product_detail}">자세히 보기 +</a></p>
+
+
+
+
+                        </div><!--pro-list-info-wrap-->
+                      </div><!--information-wrap-->
+
+                      <div class="video-custom-com">{$custom_option1}</div>
+
+
+
+
+
+
+
+
+                    </li>
+                    <li id="anchorBoxId_{$product_no}">
+
+
+                      <div class="information-wrap">
+
+                        <div class="pro-list-info-wrap">
+                                  
+                            <div class="thumbnail">
+                                  <div class="prdImg">
+                                        <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></a>
+                                  </div><!--prdImg-->
+          			        </div><!--thumbnail -->
+                            
+                  
+                          <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                          <div class="name">
+                            <div class="name-txt"><a href="{$link_product_detail}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+
+
+
+                          </div>
+                          <ul module="product_ListItem" class="spec">
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                          </ul>
+
+                          <p class="buy-btn"><a href="{$link_product_detail}">자세히 보기 +</a></p>
+
+
+
+
+                        </div><!--pro-list-info-wrap-->
+                      </div><!--information-wrap-->
+
+                      <div class="video-custom-com">{$custom_option1}</div>
+
+
+
+
+
+
+
+
+                    </li>
+                  </ul>
+    </div>
+
+
+  <div module="product_normalpaging" class="ec-base-paginate">
+    <a href="{$param_first}" class="first"><i class="ti-angle-double-left"></i></a>
+    <a href="{$param_before}"><i class="ti-angle-left"></i></a>
+    <ol>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}"><i class="ti-angle-right"></i></a>
+    <a href="{$param_last}" class="last"><i class="ti-angle-double-right"></i></a>
+  </div>

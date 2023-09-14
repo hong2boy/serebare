@@ -1,0 +1,17 @@
+.xans-layout-productrecent { text-align:center; background:#fff; }
+.recent {margin-top:36px;}
+.recent a { display:block; padding:3px 0; font-size:15px; line-height:17px;  }
+.xans-layout-productrecent ul {     width: 80%;
+    margin: 0 auto; margin-top:54px;}
+.xans-layout-productrecent li {float:left; vertical-align:top;
+    text-align: center;
+      width: 46%;
+    padding: 2%;}
+.xans-layout-productrecent li a { color:#2e2e2e; }
+.xans-layout-productrecent li img { width:100%;}
+.xans-layout-productrecent li span { display:block; padding:2px 0; line-height:16px; margin-top: 8px;
+}
+.xans-layout-productrecent .player { overflow:hidden; *zoom:1;  clear:both; position:absolute; top:50%;    width: 100%;}
+.xans-layout-productrecent .player img { width:35px;}
+.xans-layout-productrecent .player .prev {float:left; }
+.xans-layout-productrecent .player .next {float:right;}

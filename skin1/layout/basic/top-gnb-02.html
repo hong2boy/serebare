@@ -1,0 +1,84 @@
+ 
+<!-- 각 카테고리 명은 아래에서 검정색 텍스트를 수정하여 주세요. 
+        모든 링크는 href=" " 의 따옴표 안쪽으로 기재하여 주세요. 링크의 경우 꼭 필요한 경우에만 수정해 주시길 바랍니다.-->
+
+
+
+<div class="top-gnb-02">
+    
+      <h1>
+             <a href="/index.html">
+                    <!--   <span>DA.</span>-->
+                   <span><img src="/Unfold/images/main-logo.png" alt="logo"></span>  
+                </a>
+     </h1>
+
+    
+     <ul>
+                    
+                       <li><a href="/about.html">브랜드</a></li>
+
+                       <li class="shop-cate-menu"><span class="border-dot"></span><a href="/product/list.html?cate_no=24">쇼핑하기 </a> <!-- 쇼핑하기 링크는 href=" " 의 따옴표 사이에 링크를 복사하여 넣어주세요.-->
+                                           <div id="category-01" module="Layout_category">
+                                                <!--@css(/css/module/layout/category-02.css)-->
+                                                <!--@js(/js/module/layout/category.js)-->
+
+                                            <div class="position gallery-img-02">
+                                                  <ul>
+
+
+                                                    <!-- 카테고리메뉴--> <!--@import(/layout/basic/category.html)-->
+
+
+                                                  </ul>
+                                                </div>
+
+                                              </div><!--category-->
+        </li>
+
+            <!-- 아래는 매거진과 영상속 제품보기 링크 설정 방법입니다. --> 
+            <!-- 카테고리 분류 번호 확인 방법 - 쇼핑몰관리자 - 상품관리 - 상품분류관리 - 분류관리 - 원하시는 분류 선택 후 오른쪽 "분류 URL" 의 링크 맨 뒤 숫자가 분류 번호 입니다. (ex: http://ecudemo135441.cafe24.com/product/list.html?cate_no=24 )  는 24-->      
+
+                    <li><a href="/product/list-lookbook.html?cate_no=42">매거진</a></li>    <!-- 매거진 링크는 href="/product/list-lookbook.html?cate_no=42" 의 맨뒤 숫자만 해당하는 분류 번호로 수정해서 사용해 주세요 -->
+                    <li><a href="/product/list-video.html?cate_no=43">영상 제품보기</a></li>   <!-- 영상제품보기 링크는 href="/product/list-video.html?cate_no=43" 의 맨뒤 숫자만 해당하는 분류 번호로 수정해서 사용해 주세요 -->
+
+
+                    <li><a href="/instagram.html">@인스타그램</a></li>
+                    <li class="board-cate-menu" ><a href="/board/product-01/list.html?board_no=4">제품후기</a> </li>
+
+      </ul>
+
+ <div class="r-member-menu">
+    <div class="user-main">
+
+
+          <a style="cursor:pointer;"><img src="/Unfold/resource/gnb-user.svg" alt="cart" style="width:16px;"></a>
+          <div class="top-menu-box login-p" module="Layout_statelogoff">
+                <a>로그인하기</a>
+          </div>
+          <div class="top-menu-box login-p" >
+            <a module="Layout_statelogon" href="{$action_logout}">로그아웃</a>
+            <a module="Layout_statelogoff" href="/member/login.html">로그인</a>
+            <a module="Layout_statelogoff" href="/member/join.html">간편회원가입</a>
+            <a href="/myshop/index.html">마이페이지</a>
+            <a href="/myshop/order/list.html">주문조회</a>
+          </div>
+
+
+
+
+        </div><!--user-main-->
+        <div class="cart-main">
+          <a href="/order/basket.html"><img src="/Unfold/resource/gnb-cart.svg" alt="cart" style="width:17px;"><span module="Layout_orderBasketcount" class="count{$basket_cnt}">({$basket_count})</span></a>
+       </div><!--cart-main-->
+    
+         <div class="search-wrap">
+                    <div class="search-menu"><img src="/Unfold/resource/gnb-zoom.svg" alt="search" style="width:15px;"></div>
+
+                  </div><!--search-menu-->
+
+     
+                
+    </div><!---r-member-menu-->
+    
+    </div><!--top-gnb-02-->

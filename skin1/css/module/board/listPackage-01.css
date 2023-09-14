@@ -1,0 +1,168 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title {    text-align: center;
+    margin-bottom: 82px;
+    margin-top: 50px; }
+.xans-board-title .title h2 { display:inline-block; padding:0 0 0 15px; color:#8c8c8c !important; font-size:14px; *display:inline; *zoom:1; font-weight:normal; }
+.xans-board-title .title p { display:inline-block; margin:0 0 0 6px; padding:0 0 0 10px; color:#939393; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/common/ico_title.gif") no-repeat 0 0; *display:inline; *zoom:1; }
+.xans-board-title p.imgArea { margin:0 0 20px; text-align:center; clear:both;margin-top: 49px;
+    margin-bottom: 40px;}
+.xans-board-title p.imgArea img {width:100%;}
+.xans-board-listpackage-4 .boardSort { float:left; margin:0 0 10px; }
+
+
+
+/* 일반글 */
+.xans-board-listpackage-4 .xans-board-list-4 { clear:both; overflow:hidden; }
+.xans-board-listpackage-4 .xans-board-list-4 ul { width:100%; min-width:756px;  font-size:0; line-height:0; }
+.xans-board-listpackage-4 .xans-board-list-4 li { display:inline-block; *display:inline; *zoom:1;  
+    text-align:center;
+    font-size: 12px;
+    color: #757575;
+    line-height: 18px;
+    vertical-align: top;
+    /* padding-left: 1.2%; */    border-bottom: 1px solid #ececec;
+    padding-bottom: 16px;}
+
+.xans-board-listpackage-4 .xans-board-list-4 li .imgLink img { display:block; max-width:100%; height:auto; margin:0 auto 10px;
+ }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .review-board-4 {
+ 
+}
+
+
+.review-board-4 .cont-box .pro-thumb-img img {width:100%;}
+.review-board-4 .item-box {
+  clear: both;
+}
+
+.review-cont p {
+  font-size: 12px !important;
+  color: rgba(19, 19, 19, 0.62) !important;
+}
+
+.review-cont span {
+  font-size: 12px !important;
+  color: rgba(19, 19, 19, 0.62) !important;
+}
+
+.review-cont a {
+  font-size: 12px !important;
+  color: rgba(19, 19, 19, 0.62) !important;
+}
+
+.review-cont img {
+  display: none !important;
+}
+
+.review-board-4 .item-box ul {}
+
+.review-board-4 .item-box ul li {
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  padding: 7px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.review-board-4 .cont-img {
+
+}
+
+.review-board-4 .review-point img {
+  width: auto !important;
+  margin-left: -10px;
+}
+
+.review-board-4 .review-cont {
+  height: 61px;
+  line-height: 162%;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 11px;
+}
+
+.review-board-4 .review-point {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-top: 1px solid #fff;
+  padding-top: 8px;
+}
+
+.review-board-4 .date {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  float: left;
+ 
+}
+
+.review-board-4 .count {
+  font-size: 13px;
+  float: right;
+  margin-top: -5px;
+}
+
+.review-board-4 .count span {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: bottom;
+}
+
+.review-board-4 .count i {
+  display: inline-block;
+  /* margin-top: 13px; */
+  margin-left: 5px;
+  font-size: 14px;
+  margin-right: 7px;
+  color: #ff7575;
+}
+
+.review-board-4 .count .txtNum {
+  padding-left: 5px;
+}
+
+.review-board-4 .writer {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  float: left;
+  margin-right: 7px;
+}
+
+.review-board-4 .cont-box {
+    font-size: 14px;
+    /* margin-top: 10px; */
+    overflow: hidden;
+    border-top: 1px solid #ececec;
+    padding-top: 15px;
+}
+
+.review-board-4 .cont-box .pro-thumb-img {
+  float: left;
+  width: 50px;
+  margin-right: 8px;
+}
+
+.review-board-4 .cont-box .pro-thumb-img img {}
+
+.review-board-4 .cont-box-all {
+  padding: 1px;
+    text-align:left;
+}
+    
+    
+    
+    
+    

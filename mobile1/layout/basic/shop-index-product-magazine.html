@@ -1,0 +1,162 @@
+     <div id ="sh_TypeMagazine" class="wrap-80 on_off_select" style="background: #f9f9f9; margin-top: -14px;">
+        <div class="ver-list-g3">
+          <div class="promotion-list box-01">
+
+
+
+
+              
+
+            <div module="product_listmain_1" class="ec-base-product-mini">
+              <!--
+                $count = 5
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+              -->
+              <div class="title">
+                <h2>
+                  <span style="display: {$category_title_text_display};">{$category_title_text} <a class="ab-border"></a></span>
+
+                </h2>
+              </div>
+              <ul class="prdList grid4">
+                <li id="anchorBoxId_{$product_no}" class="grid-item">
+                  <span module="product_Imagestyle">
+                    <span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');">  </span>
+                  </span>
+                  <div class="name">
+                    <div class="name-txt"><a href="{$link_product_detail}" class="{$product_name_display|display}" style="font-size: 17px;"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+
+
+                  </div>
+
+                  <p class="big-image"><a href="{$link_product_detail}" ><img src="{$image_big}"alt="" class="thumb" /></a></p>
+
+                  <div class="thumbnail">
+
+
+                    <div name="anchorBoxName_{$product_no}" class="image-box" onclick="location.href='{$link_product_detail}'">
+                      <div class="prdImgFront"><img src="{$image_medium}"alt="" class="thumb" /></div>
+                      <a><img src="{$image_tiny}"alt="" class="thumb thumb-over" /></a>
+
+                    </div><!-- href="{$link_product_detail}" name="anchorBoxName_{$product_no}"-->
+
+                    <div class="wish">{$list_wish_icon}</div>
+
+
+
+                  </div><!--thumbnail-->
+                  <div class="information-wrap">
+                    <div class="button-wrap">
+
+
+                    </div><!--button-wrap-->
+
+                    <div class="pro-list-info-wrap">
+                      <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                      <ul class="spec">
+                        <li class="simple"><a href="/product/detail.html{$param}">{$simple_desc}</a></li>
+
+                        <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                        <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                        <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                      </ul>
+
+                    </div><!--pro-list-info-wrap-->
+
+                    <div class="cart-over">
+
+
+                      <div class="cart-icon"> {$basket_icon}</div>
+
+                    </div>
+
+
+
+
+
+                  </div><!--information-wrap-->
+
+
+
+
+                </li>
+
+                <li id="anchorBoxId_{$product_no}" class="grid-item">
+                  <span module="product_Imagestyle">
+                    <span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');">  </span>
+                  </span>
+                  <div class="name">
+                    <div class="name-txt"><a href="{$link_product_detail}" class="{$product_name_display|display}" style="font-size: 17px;"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+
+
+                  </div>
+
+                  <p class="big-image"><a href="{$link_product_detail}" ><img src="{$image_big}"alt="" class="thumb" /></a></p>
+
+                  <div class="thumbnail">
+
+
+                    <div name="anchorBoxName_{$product_no}" class="image-box" onclick="location.href='{$link_product_detail}'">
+                      <div class="prdImgFront"><img src="{$image_medium}"alt="" class="thumb" /></div>
+                      <a><img src="{$image_tiny}"alt="" class="thumb thumb-over" /></a>
+
+                    </div><!-- href="{$link_product_detail}" name="anchorBoxName_{$product_no}"-->
+
+                    <div class="wish">{$list_wish_icon}</div>
+
+
+
+                  </div><!--thumbnail-->
+                  <div class="information-wrap">
+                    <div class="button-wrap">
+
+
+                    </div><!--button-wrap-->
+
+                    <div class="pro-list-info-wrap">
+                      <div class="promotion">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</div>
+
+                      <ul class="spec">
+                        <li class="simple"><a href="/product/detail.html{$param}">{$simple_desc}</a></li>
+
+                        <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                        <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                        <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                      </ul>
+
+                    </div><!--pro-list-info-wrap-->
+
+                    <div class="cart-over">
+
+
+                      <div class="cart-icon"> {$basket_icon}</div>
+
+                    </div>
+
+
+
+
+
+                  </div><!--information-wrap-->
+
+
+
+
+                </li>
+
+              </ul>
+            </div><!-- module="product_listmain_1" -->
+
+
+          </div><!--promotion-list box-01-->
+
+
+        </div><!--ver-list-g3-->
+      </div><!--wrap-80-->
+
+
+

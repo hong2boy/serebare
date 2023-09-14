@@ -1,0 +1,80 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    input[type=text], input[type=password], input[type=number], input[type=tel] {border:0;}
+    </style>
+    
+    
+<div class="tab-btn-join">
+       <p><a href="#">로그인</a></p>
+       <p><a href="/member/agreement.html">회원가입</a></p>
+
+  </div>
+
+
+
+
+
+<div module="member_login" id="{$member_login_module_id}">
+    <!--@css(/css/module/member/login.css)-->
+    <!--@js(/js/module/member/login.js)-->
+    <!--
+        $defaultReturnUrl = /index.html
+    -->
+    <!--주문조회-->
+    <div class="loginWrap">
+
+
+        <fieldset>
+            <div class="formBox">
+                <div class="form">
+                    {$form.member_id}
+                    {$form.member_passwd}
+                </div>
+
+                <div class="btnArea type1">
+                    <button type="button" class="btnSubmit" onclick="{$action_func_login}" style="width: 100%;">로그인</button>
+                </div>
+                <div class="btnArea type1 {$display_nomember|display}">
+                    <a href="{$returnUrl}" onclick="{$action_nomember_order}" class="btnEm">비회원 구매</a>
+                </div>
+                <div class="btnArea typeLogin">
+                    <a href="/member/id/find_id.html" class="btnLogin">아이디찾기</a>
+                    <a href="/member/passwd/find_passwd_info.html" class="btnLogin">비밀번호찾기</a>
+               <a href="/member/agreement.html" class="btnLogin">회원가입</a>
+                </div>
+                <div class="btnArea type1">
+                    <a href="#none" class="btnNaver {$display_naver|display}" onclick="{$naver_func_login}"><span>네이버 로그인</span></a>
+                    <a href="#none" class="btnFacebook {$display_facebook|display}" onclick="{$facebook_func_login}"><span>Facebook 로그인</span></a>
+                    <a href="#none" class="btnGoogle {$display_google|display}" onclick="{$google_func_login}"><span>구글 로그인</span></a>
+                    <a href="#none" class="btnKakao {$display_kakao|display}" onclick="{$kakao_func_login}"><span>카카오계정 로그인</span></a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+     <!--//주문조회-->
+</div>
+
+<div module="MyShop_OrderHistoryNologin" id="{$order_history_nologin_id}">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+
+    <h2>비회원 주문조회</h2>
+    <fieldset>
+        <div class="formBox">
+            <div class="form">
+                {$form.order_name}
+                {$form.order_id}
+                {$form.order_password}
+            </div>
+            <div class="btnArea type1">
+                <button type="button" class="btnSubmit" onclick="$('#historyNoLoginForm').submit();" style="width:100%;">조회</button>
+            </div>
+   
+            <div class="help">
+                <p>비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+            </div>
+        </div>
+    </fieldset>
+</div>

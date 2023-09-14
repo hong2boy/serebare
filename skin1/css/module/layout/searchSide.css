@@ -1,0 +1,99 @@
+.xans-layout-searchside {
+  width: 600px;
+  margin: 0 auto;
+    text-align:center;
+}
+
+.xans-layout-searchside h2 {
+  height: 20px;
+  color: #9;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 26px;
+  font-weight: normal;
+}
+
+.xans-layout-searchside fieldset {
+  border-radius: 2px;
+}
+
+.xans-layout-searchside #keyword {
+  width: 433px;
+  height: 43px;
+  /* padding: 0 0 0 9px; */
+  border: 0;
+  border-bottom: 1px solid #424242;
+  line-height: 32px;
+  font-size: 23px;
+  color: #2e2e2e;
+  background: #fff;
+  margin-right: 10px;
+}
+
+.xans-layout-searchside .bestKeyword {
+  margin: 7px 0;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.xans-layout-searchside .bestKeyword a {
+  color: #757575;
+  text-decoration: none;
+}
+
+.xans-layout-searchside .bestKeyword a:hover {
+  color: #008bcc;
+}
+
+.xans-layout-searchside .bestKeyword a:after {
+  content: ", "
+}
+
+.xans-layout-searchside p.button {
+  margin: 10px 0 0;
+  margin-top: 54px;
+  text-decoration: underline;
+}
+
+.xans-layout-searchside p.button a {
+  margin: 0 0 0 4px;
+  color: #929292;
+}
+
+.xans-layout-searchside .ti-search {
+  vertical-align: text-top;
+        font-size: 21px;
+}
+
+.xans-layout-searchside .popular {
+  margin-top: 35px;
+}
+
+.xans-layout-searchside .popular strong {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  color: #929292;
+  margin-right: 18px;
+  padding-top: 4px;
+  font-size: 13px;
+}
+
+.xans-layout-searchside .popular p {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+}
+
+.xans-layout-searchside .popular p a {
+  padding-left: 10px;
+  font-size: 18px !important;
+  vertical-align: middle;
+}
+
+input:-internal-autofill-previewed, input:-internal-autofill-selected,
+textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+  background-color: rgb(255, 255, 255) !important;
+}

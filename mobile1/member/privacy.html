@@ -1,0 +1,14 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div id="titleArea">
+    <h2>개인정보처리방침</h2>
+
+</div>
+
+<div module="mall_privacy">
+    <!--@css(/css/module/mall/privacy.css)-->
+    <div class="agreeBox">
+        <p class="date {$displayEnforce|display}">{$enforce_date}</p>
+        <div class="agree">{$privacy_agreement}</div>
+    </div>
+    <a href="{$before_enforce_link}" class="btnPrev {$displayBeforeEnforce|display}" target="_blank">{$before_enforce_date}</a>
+</div>

@@ -1,0 +1,76 @@
+
+
+
+  <!-- ////////////// 메인 슬라이드 시작 ////////////////-->
+  <div data-use = "" id="mainSection_Review" class="section">
+
+    <div class="review-board shop-slide-03">
+      <div class="title-txt">
+        <!-- ////////////// 리뷰 타이틀 문구 입니다. 아래에서 검정색 텍스트를 수정해 주세요 -->
+            <div class="border-short"></div>
+        <h2 onclick="location.href='/board/product-01/list.html?board_no=4'">
+          실시간 제품리뷰
+        </h2>
+      </div>
+      <!--title-txt-->
+      <div module="board_listpackage_4" id ="mainSection_Review_Slide" class="item-box">
+        <ul module="board_list_4" class="bxslider-about-3 swiper-wrapper">
+          <!--
+                                  $main_list = yes
+                                  $count = 10
+                                -->
+          <li class="swiper-slide" onclick="location.href='/board/product-01/read.html{$param_read}'">
+            <div class="main">
+              <div class="cont-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink">{$product_img}</a></div>
+
+              <div class="cont-box-all">
+                <div class="cont-box"><a href="/board/product-01/read.html{$param_read}"><span class="pro-thumb-img"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></span>{$subject|cut:26,...}</a></div>
+
+                <div class="review-cont">{$content}</div>
+                <div class="review-point"><img src="/Unfold/resource/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                <div class="writer">{$writer}</div>
+
+                <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+
+              </div>
+              <!--cont-box-all-->
+            </div>
+          </li>
+
+         <li class="swiper-slide" onclick="location.href='/board/product-01/read.html{$param_read}'">
+            <div class="main">
+              <div class="cont-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink">{$product_img}</a></div>
+
+              <div class="cont-box-all">
+                <div class="cont-box"><a href="/board/product-01/read.html{$param_read}"><span class="pro-thumb-img"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></span>{$subject|cut:26,...}</a></div>
+
+                <div class="review-cont">{$content}</div>
+                <div class="review-point"><img src="/Unfold/resource/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                <div class="writer">{$writer}</div>
+
+                <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+
+              </div>
+              <!--cont-box-all-->
+            </div>
+          </li>
+        </ul>
+
+        <!-- If we need navigation buttons -->
+      </div>
+      <!--board_listpackage_4-->
+
+
+
+
+
+
+    </div>
+    <!--review-board-->
+
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <!--mainSection_Review-->
+  <!-- ////////////// 메인 슬라이드 END  ////////////////-->

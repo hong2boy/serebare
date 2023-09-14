@@ -1,0 +1,89 @@
+<!-- UNFOLD Custom JS 전페이지 공통 js-->
+<script type="text/javascript">
+  (function($){
+
+    $('.bxslider-about-2').bxSlider({
+      auto: true,
+      autoControls: false,
+
+      minSlides: 2,
+      maxSlides: 2,
+      slideWidth: 1200,
+      slideMargin: 10
+
+    });
+
+    $('.bxslider-about-3').bxSlider({
+      auto: false,
+      autoControls: false,
+
+      minSlides: 4,
+      maxSlides: 4,
+      slideWidth: 1200,
+      slideMargin: 10
+
+    });
+
+
+  })(jQuery);
+</script>
+<script>
+
+
+  (function($){
+
+    var modal = $('.modal');
+    function openModal() {
+      modal.fadeIn();
+    }
+    function closeModal() {
+      modal.fadeOut();
+    }
+
+    $('.open').click(openModal);
+    $('.close').click(closeModal);
+    $('.modal-bg').click(closeModal);
+
+  })(jQuery);
+
+
+</script>
+<script>
+
+  (function($){
+
+    var modala = $('.modal-01');
+    function openModala() {
+      modala.fadeIn();
+    }
+    function closeModala() {
+      modala.fadeOut();
+    }
+
+    $('.open-01').click(openModala);
+    $('.close-01').click(closeModala);
+    $('.modal-bg').click(closeModala);
+
+  })(jQuery);
+
+
+</script>
+<script>
+
+  (function($){
+
+    var modalb = $('.modal-02');
+    function openModalb() {
+      modalb.fadeIn();
+    }
+    function closeModalb() {
+      modalb.fadeOut();
+    }
+
+    $('.open-02').click(openModalb);
+    $('.close-02').click(closeModalb);
+
+
+  })(jQuery);
+
+</script>

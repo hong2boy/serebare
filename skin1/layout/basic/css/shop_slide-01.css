@@ -1,0 +1,248 @@
+
+
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+.bxslider-about {width:100%;  height:100%; }
+.bxslider-about li{width:100%; height:100% !important;}
+        .bx-wrapper  { height:100% ;}
+.bx-viewport { height:100% !important; }
+.shop-slide .bx-wrapper  { height:100% ;
+	position: relative;
+    clear:both;
+	padding: 0;
+	*zoom: 1;  margin: 0 auto;
+}
+
+.shop-slide .bx-wrapper li {cursor:pointer;}
+.shop-slide .bx-wrapper li:hover {}
+
+.shop-slide .bx-wrapper  img {
+	width: 100%; border-radius:0;
+	display: block;
+}
+.shop-slide .bx-wrapper :hover a{opacity:1;}
+
+/** THEME
+===================================*/
+
+.shop-slide .bx-wrapper  .bx-viewport {
+
+
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.shop-slide .bx-wrapper  .bx-pager,
+.shop-slide .bx-wrapper  .bx-controls-auto {
+	position: absolute;
+	bottom: 45px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.shop-slide .bx-wrapper  .bx-loading {
+	min-height: 50px;
+
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.shop-slide .bx-wrapper  .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.shop-slide .bx-wrapper  .bx-pager .bx-pager-item,
+.shop-slide .bx-wrapper  .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.shop-slide .bx-wrapper  .bx-pager.bx-default-pager a {
+	border:1px solid #fff;
+	text-indent: -9999px;
+	display: block;
+	width: 11px;
+	height: 11px;
+	margin: 0 6px;
+	outline: 0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.shop-slide .bx-wrapper  .bx-pager.bx-default-pager a:hover,
+.shop-slide .bx-wrapper  .bx-pager.bx-default-pager a.active {
+	background: #fff;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.shop-slide .bx-wrapper  .bx-prev {
+     text-indent: 9999px; 
+    background: url('//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design114/shop_arrow.png') no-repeat 0 0;  
+  text-decoration: none;
+  display: block;
+  width:70px;
+  height: 70px;
+    opacity: 0;
+  position: absolute;
+ top:48.5%;
+  z-index: 10;
+  overflow: hidden;
+ 
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+	left:93px; margin-top:-35px;
+      background-position:0px 0; 
+    
+}
+
+.shop-slide .bx-wrapper  .bx-next {
+     text-indent: 9999px; 
+    background: url('//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design114/shop_arrow.png') no-repeat 0 0;  
+  text-decoration: none;
+  display: block;
+  width:70px;
+  height: 70px;
+  opacity: 0;
+  position: absolute;
+    top:48.5%;
+  z-index: 10;
+  overflow: hidden;
+ margin-top:-35px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+ right: 83px;
+
+    background-position:-72px 0; 
+}
+
+.shop-slide:hover .bx-prev {
+  opacity: 0.7 !important;
+  left: 83px;
+}
+.shop-slide:hover .bx-prev:hover {
+  opacity: 1;
+}
+.shop-slide:hover .bx-next {
+  opacity: 0.7 !important;
+  right: 73px;
+}
+
+.shop-slide:hover .bx-next:hover {
+  opacity: 1;
+}
+
+
+
+
+/* AUTO CONTROLS (START / STOP) */
+
+.shop-slide .bx-wrapper  .bx-controls-auto {
+	text-align: center;
+}
+
+.shop-slide .bx-wrapper  .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+
+	margin: 0 3px;
+}
+
+.shop-slide .bx-wrapper  .bx-controls-auto .bx-start:hover,
+.shop-slide .bx-wrapper  .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.shop-slide .bx-wrapper  .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+
+	margin: 0 3px;
+}
+
+.shop-slide .bx-wrapper  .bx-controls-auto .bx-stop:hover,
+.shop-slide .bx-wrapper  .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.shop-slide .bx-wrapper  .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.shop-slide .bx-wrapper  .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.shop-slide .bx-wrapper  .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.shop-slide .bx-wrapper  .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+

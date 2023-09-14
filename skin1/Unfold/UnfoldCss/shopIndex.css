@@ -1,0 +1,258 @@
+/* shop-index-slide */
+#sh_shopSlide{
+  opacity: 0;
+}
+.swiper-pagination {z-index:1;}
+.shop-index-slide {
+  position: relative;
+}
+
+.shop-index-top {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.shop-index-top .swiper-pagination {
+  position: relative;
+  bottom: -19px;
+}
+
+.shop-index-top .swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+}
+
+.shop-index-top .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  float: left;
+  left: 35px;
+}
+
+:root {
+  --swiper-navigation-size: 33px;
+  --swiper-theme-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.shop-index-top .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  float: right;
+  right: 28px;
+}
+
+/* shop-index-slide */
+/* shop-index-slide BxSliderPager*/
+#bx-pager {
+  position: absolute;
+  cursor: pointer;
+  position: absolute;
+  bottom: -22px;
+  left: 32px;
+  cursor: pointer;
+  background: #fff;
+  padding: 20px 61px 18px 29px;
+  box-shadow: 8px 7px 0px -1px rgba(210, 210, 210, 0.33);
+  min-width: 280px;
+}
+
+.pagerItem {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.pagerLineWrap {
+  margin-right: 11px;
+  display: inline-block;
+  width: 5px;
+  background: #000;
+  height: 1px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+.pagerLine {}
+
+.pagerText {
+  display: inline-block;
+  color: #000;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  font-size: 11px;
+  color: #000;
+}
+
+.pagerItem.active .pagerText {
+  color: #000;
+  font-size: 20px;
+}
+
+.pagerItem.active .pagerLineWrap {
+  width: 38px;
+  background: #000;
+  height: 2px;
+}
+
+.pagerItem.active .pagerLineWrap .pagerText {}
+
+/* shop-index-slide BxSliderPager*/
+/* shop-index-slide BxSliderControll*/
+.shop-index-slide .bx-wrapper .bx-next:hover, .shop-index-slide .bx-wrapper .bx-next:focus {
+  background-position: center;
+  /* bxslider cdn css에 포지션을 바꾸는 내용이 있어서 덮어씌우기 위한 내용. 아래 next의 background-position: 과 맞춰줄것 */
+}
+
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+  background-position: center;
+}
+
+.shop-index-slide .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  bottom: 20px;
+  width: 33px;
+  height: 33px;
+  z-index: 0;
+  overflow: hidden;
+  /* opacity: 0.5; */
+  top: auto;
+  cursor: pointer;
+  background-size: 26px;
+  padding: 4px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.shop-index-slide .bx-wrapper .bx-controls-direction a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bx-wrapper .bx-next {
+  background: none;
+}
+
+.shop-index-slide .bx-prev {
+  background: #fff url(/web/upload/unfold_design119/arrow-up.svg) no-repeat center;
+  left: auto;
+  right: 29px;
+  bottom: 62px !important;
+}
+
+.shop-index-slide .bx-next {
+  background: #fff url(/web/upload/unfold_design119/arrow-down.svg) no-repeat center;
+  left: auto;
+  right: 29px;
+  bottom: 28px !important;
+}
+
+/* shop-index-slide BxSliderControll*/
+.ver-list-g3 {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.ver-list-g3 .promotion-list .title-box p {}
+
+.ver-list-g3 .promotion-list .title-box h4 {}
+
+.ver-list-g3 .promotion-list .title-box img {
+  width: 100%;
+}
+
+.shop-index-sale {
+  overflow: hidden;
+  width: 87%;
+  margin: 0 auto;
+  min-width: 870px;
+}
+
+.shop-index-movie {
+  background: url('//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design119/shop-index-movie-bg-01.jpg') center no-repeat;
+  width: 100%;
+  height: 770px;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.shop-index-movie .shop-index-movie-ap {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shop-index-movie .movie-wrap-w {
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  left: -490px;
+}
+
+.shop-index-movie .r-cont-box {
+  background: url(/web/upload/unfold_design119/shop-index-movie-bg-02.jpg) center no-repeat;
+  position: absolute;
+  left: -132px;
+  height: 462px;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt {
+  background: #fff;
+  width: 600px;
+  height: 425px;
+  margin-top: 18px;
+  margin-right: 19px;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt-wrap {
+  float: right;
+  margin-top: 100px;
+  width: 56%;
+  margin-right: 20px;
+}
+
+.shop-index-movie .r-cont-box .border-short {
+  width: 35px;
+  border-bottom: 4px solid #272727;
+  margin: initial;
+  margin-bottom: 16px;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt h2 {
+  font-size: 31px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt h3 {
+  color: #8c8c8c;
+  /* font-weight: normal; */
+  font-family: 'Montserrat', 'Noto Sans KR', AppleGothic, sans-serif;
+  margin-bottom: 35px;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt h4 {}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt .go-btn {
+  margin-top: 20px;
+  background: #1d1d1d;
+  width: 150px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px solid #1d1d1d;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  color: #fff;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt .go-btn:hover {
+  border: 1px solid #1d1d1d;
+  color: #000;
+  transition: all 0.4s ease-out;
+  background: #fff;
+}

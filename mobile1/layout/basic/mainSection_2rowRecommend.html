@@ -1,0 +1,67 @@
+
+  <!-- ////////////// 메인 슬라이드  시작 ////////////////-->
+  <div data-use = "off" id="mainSection_2rowRecommend" class="section mainslide-03">
+
+    <div class="r-product-list">
+      <!-- 상품 01-->
+      <div module="product_listmain_1"  class="ec-base-product main-product-01">
+        <div class="border-short">
+        </div>
+
+        <h2>{$category_title_text}</h2>
+        <!--
+          $count = 10
+          ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+          ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+          $moreview = yes
+          $cache = yes
+        -->
+        <ul class="prdList grid2">
+          <li>
+            <div class="thumbnail">
+              <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}"
+                style="background-image:url('{$icon_url}');"></span></span></a>
+                <span class="wish">{$list_wish_icon}</span>
+              </div>
+              <div class="description">
+                <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                <ul module="product_ListItem" class="spec">
+                  <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                  <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                </ul>
+                <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                <div class="cart">{$basket_icon}</div>
+              </div>
+            </li>
+            <li>
+              <div class="thumbnail">
+                <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}"
+                  style="background-image:url('{$icon_url}');"></span></span></a>
+                  <span class="wish">{$list_wish_icon}</span>
+                </div>
+                <div class="description">
+                  <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                  <ul module="product_ListItem" class="spec">
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                  </ul>
+                  <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                  <div class="cart">{$basket_icon}</div>
+                </div>
+              </li>
+            </ul>
+          </div><!-- //상품 01 -->
+
+          <div module="product_listmore_1" class="ec-base-paginate typeMoreview">
+            <a href="#none" onclick="{$more_action}" class="btnMore">
+              더보기 (<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)
+              <span class="icoMore"> + </span>
+            </a>
+          </div>
+        </div>
+        <!--r-product-list-->
+
+      </div>
+      <!--mainSection_2rowRecommend-->
+
+      <!-- ////////////// 메인 슬라이드  END  ////////////////-->

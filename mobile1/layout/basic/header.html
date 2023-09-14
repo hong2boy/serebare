@@ -1,0 +1,34 @@
+
+
+<!--검색--> <!--@import(/layout/basic/top-search.html)-->
+  <div id="header">
+    <!-- 왼쪽 오픈메뉴--> <!--@import(/layout/basic/open-menu.html)-->
+    <div class="search-wrap menu__after-move__show">
+      <div class="search-menu">
+       <img src="/Unfold/resource/gnb-zoom.svg" alt="zoom" style="width:16px;">
+      </div>
+    </div>
+    <!--search-menu-->
+
+    <h1>
+         <!--   <a href="/index.html">DA</a> -->
+          <span class="logo-img"><a href="/index.html"><img src="/Unfold/images/main-logo.png" alt="logo"></a></span>
+    </h1>
+
+    <p class="user-btn" module="Layout_statelogoff"><a href="/member/login.html"><img src="/Unfold/resource/gnb-user.svg" alt="user" style="width:16px;"></a>
+
+    </p>
+    <p class="user-btn" module="Layout_statelogon"><a href="/myshop/index.html"><img src="/Unfold/resource/gnb-user.svg" alt="user" style="width:16px;"></i></a>
+
+    </p>
+
+    <div class="cart-main">
+      <a href="/order/basket.html"><img src="/Unfold/resource/gnb-cart.svg" alt="user" style="width:16px;"><span module="Layout_orderBasketcount" class="count{$basket_cnt}">({$basket_count})</span></a>
+    </div>
+    <!--cart-main-->
+
+
+       <!--@import(/layout/basic/gnb-category.html)-->
+
+
+  </div><!--header-->

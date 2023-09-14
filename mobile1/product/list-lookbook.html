@@ -1,0 +1,162 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<style>
+    .xans-product-menupackage .title h2 {margin-bottom:20px !important;}
+    .grid-wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+    .contents-wrap {
+    margin-top: 138px;
+}
+    </style>
+
+          <!--@css(/Unfold/UnfoldCss/list-lookbook.css)-->
+
+
+
+<div class="xans-product-listnormal-wrap">
+
+<div module="Product_menupackage" >
+
+
+    <div class="title" module="product_headcategory" >
+        <h2><span>Magazine</span></h2>
+
+    </div>
+
+       <ul class="menuCategory">
+        <li module="product_displaysubcategory" style="display:{$display};" class="{$selected}">
+            <a href="/product/list-lookbook.html?{$param_cate_no}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="/product/list-lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <div module="product_children" class="subCategory">
+                            <ul>
+                                <li class="{$selected}"><a href="/product/list-lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                                <li class="{$selected}"><a href="/product/list-lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            </ul>
+                            <img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/product/btn_category_close.png" alt="" class="icoClose" />
+                        </div>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="/product/list-lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <div module="product_children" class="subCategory">
+                            <ul>
+                                <li class="{$selected}"><a href="/product/list-lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                                <li class="{$selected}"><a href="/product/list-lookbook.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            </ul>
+                            <img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/product/btn_category_close.png" alt="" class="icoClose" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+
+    <div module="product_listnormal" class="xans-product-listnormal grid-wrap g1">
+              <!--
+            $count = 18
+                ※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있습니다.
+                ※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+
+                    <ul class="prdList grid2 grid">
+                                           <div class="gutter-sizer"></div>
+
+                                   <li id="anchorBoxId_{$product_no}"class="grid-item" onclick="location.href='/product/detail-lookbook.html{$param}'">
+                                          <div class="box">
+
+                                            <div class="thumbnail">
+                                                <div class="box-over">
+                                                          <p><i class="ti-plus"></i><a>view more</a></p>
+                                                </div>
+
+                                                <a href="/product/detail-lookbook.html{$param}" class="list-img" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+
+                                            </div>
+
+                                            <div class="description dp-wrap">
+                                                 <div class="description">
+                                                        <div class="information" >
+
+
+                                                                <div class="name"><a class="{$product_name_display|display}">
+                                                                    <span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a>
+                                                               </div>
+                                                                 <p class="simple"><a>{$simple_desc}</a></p>
+                                                        </div>
+                                                </div>
+
+                                              </div>
+                                          </div> <!--  <div class="box">-->
+                                        </li>
+                  <li id="anchorBoxId_{$product_no}"class="grid-item" onclick="location.href='/product/detail-lookbook.html{$param}'">
+                                          <div class="box">
+
+                                            <div class="thumbnail">
+                                                <div class="box-over">
+                                                          <p><i class="ti-plus"></i><a>view more</a></p>
+                                                </div>
+
+                                                <a href="/product/detail-lookbook.html{$param}" class="list-img" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+
+
+                                            </div>
+
+                                            <div class="description dp-wrap">
+                                                 <div class="description">
+                                                        <div class="information" >
+
+
+                                                                <div class="name"><a class="{$product_name_display|display}">
+                                                                    <span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a>
+                                                               </div>
+                                                                 <p class="simple"><a>{$simple_desc}</a></p>
+                                                        </div>
+                                                </div>
+
+                                              </div>
+                                          </div> <!--  <div class="box">-->
+                                        </li>
+                    </ul>
+
+	</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+  <div module="product_normalpaging" class="ec-base-paginate typeList">
+     <a href="{$param_before}" class="btnPrev">이전 페이지</a>
+    <ol>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+      <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+      <a href="{$param_next}" class="btnNext">다음 페이지</a>
+  </div>
+
+
+<script src="/Unfold/UnfoldJs/productListLookBook.js"></script>

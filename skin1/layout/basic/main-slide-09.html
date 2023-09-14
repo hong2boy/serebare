@@ -1,0 +1,86 @@
+
+                <!-- ////////////// 메인 슬라이드 9 시작 ////////////////-->
+                <section id="slide9" class="slide">
+                  <div class="review-board shop-slide-03">
+
+                    <div class="title-txt">
+
+             <!-- ////////////// 리뷰 타이틀 문구 입니다. 아래에서 검정색 텍스트를 수정해 주세요 -->
+
+                      <h2><i class="ti-camera"></i>실시간 제품리뷰</h2>
+
+                      <div class="more-btn">
+                        <span class="more-title"><a href="/board/product-01/list.html?board_no=4">더보기</a></span> <i class="ti-plus"></i>
+                      </div><!--more-btn-->
+
+                    </div><!--title-txt-->
+                    <div class="border-short" style="  margin: 0; margin-bottom: 31px; margin-left: 2px;"></div>
+
+                    <div id = "mainReviewSw"  module="board_listpackage_4" class="item-box" >
+
+                      <ul class = "swiper-wrapper" module="board_list_4">
+
+                        <!--
+                          $main_list = yes
+                          $count = 12
+                        -->
+
+                     
+                         <li class = "swiper-slide" onclick="location.href='/board/product-01/read.html{$param_read}'">
+                          <div class="main">
+                            <div class="cont-img">
+                              <a href="/board/product-01/read.html{$param_read}" class="imgLink">{$product_img}</a>
+                              </div>
+
+                            <div class="cont-box-all">
+                                     <div class="cont-box-all-wrap">
+                                              <div class="thumb-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink"><img src="/file_data/ecudemo179898/{$real_filename}" onerror="this.src='//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design119/198x198.gif'" alt="" /></a></div>
+                                              <div class="cont-box"><a href="/board/product-01/read.html{$param_read}">{$subject|cut:26,...}</a></div>
+
+                                              <div class="review-cont">{$content}</div>
+                                            
+                                              <div class="writer">{$writer}</div>
+
+                                              <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+                                              <div class="{$hit_display|display} count"><i class="ti-eye"></i><span class="txtNum">{$hit_count}</span></div>
+                                           <div class="review-point"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design119/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                                         </div><!--cont-box-all-wrap-->
+                            </div><!--cont-box-all-->
+                          </div>
+                        </li>
+
+                         <li class = "swiper-slide" onclick="location.href='/board/product-01/read.html{$param_read}'">
+                          <div class="main">
+                            <div class="cont-img">
+                              <a href="/board/product-01/read.html{$param_read}" class="imgLink">{$product_img}</a>
+                              </div>
+
+                            <div class="cont-box-all">
+                                     <div class="cont-box-all-wrap">
+                                              <div class="thumb-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink"><img src="/file_data/ecudemo179898/{$real_filename}" onerror="this.src='//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design119/198x198.gif'" alt="" /></a></div>
+                                              <div class="cont-box"><a href="/board/product-01/read.html{$param_read}">{$subject|cut:26,...}</a></div>
+
+                                              <div class="review-cont">{$content}</div>
+                                            
+                                              <div class="writer">{$writer}</div>
+
+                                              <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+                                              <div class="{$hit_display|display} count"><i class="ti-eye"></i><span class="txtNum">{$hit_count}</span></div>
+                                           <div class="review-point"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/unfold_design119/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                                         </div><!--cont-box-all-wrap-->
+                            </div><!--cont-box-all-->
+                          </div>
+                        </li>
+
+                      </ul>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div> <!--board_listpackage_4-->
+
+                  </div><!--review-board-->
+
+                  <div class="swiper-scrollbar"></div>
+                </section><!--slide9-->
+                <!-- ////////////// 메인 슬라이드 9 END  ////////////////-->

@@ -1,0 +1,437 @@
+@charset "utf-8";
+
+/* **************************** //필수 CSS 수정 및 삭제 불가 ****************************
+.notokr-regular { font-family:notokr-regular !important; }
+.notokr-black { font-family:notokr-black !important; }
+.notokr-bold { font-family:notokr-bold !important; }
+.notokr-demilight { font-family:notokr-demilight !important; }
+.notokr-light { font-family:notokr-light !important; }
+.notokr-medium { font-family:notokr-medium !important; }
+.notokr-thin { font-family:notokr-thin !important; }
+font-family: 'Quicksand','notokr-bold',AppleGothic,sans-serif; */
+/* tag reset font-family: 'Quicksand','notokr-regular',AppleGothic,sans-serif; */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body, code {
+  font-family: 'Montserrat', 'Noto Sans KR', AppleGothic, '돋움',sans-serif;
+  font-size: 13px;
+  color: #353535;
+  background: #fff;
+}
+
+body {
+  min-width: 1200px;
+}
+
+body#popup {
+  min-width: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.4s ease-out;
+}
+
+a:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease-out;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+table.nneditor-table {
+  width: auto !important;
+}
+
+h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+/**/
+li {
+  list-style: none;
+}
+
+img, fieldset {
+  border: none;
+  vertical-align: top;
+}
+
+table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+th, td {
+  border: 0;
+  vertical-align: top;
+}
+
+input, select, textarea {
+  font-size: 100%;
+  color: #353535;
+  vertical-align: middle;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  width: 13px;
+  height: 13px;
+  border: 0;
+}
+
+input[type=text],
+input[type=password] {
+  height: 31px;
+  line-height: 31px;
+  padding: 2px 13px;
+  border: 0;
+  border: 0;
+  color: #353535;
+  font-size: 12px;
+  border-bottom: 1px solid #545454;
+  background: none;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+input[type=radio]+label, input[type=checkbox]+label {
+  margin: 1px 20px 0 5px;
+  vertical-align: middle;
+}
+
+select {
+  height: 31px;
+  border: 1px solid #d5d5d5;
+}
+
+textarea {
+  padding: 5px 6px;
+  border: 1px solid #d5d5d5;
+  line-height: 1.5;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #c1c1c1;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #c1c1c1;
+  opacity: 1;
+}
+
+legend {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+
+button {
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+hr.layout {
+  display: none;
+}
+
+.objHidden {
+  visibility: hidden;
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+  height: 0;
+  width: 0;
+}
+
+table tr.radioType input,
+span.noBorder input {
+  border: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 3px 0 0 !important;
+  vertical-align: middle !important;
+  background: none !important;
+}
+
+#content_CONTAINER table, #bi_inquire_content_CONTAINER table {
+  border: 0;
+  margin: 0 0 -1px;
+}
+
+#content_CONTAINER table:before, #bi_inquire_content_CONTAINER table:before {
+  display: none;
+}
+
+#content_CONTAINER td, #bi_inquire_content_CONTAINER td {
+  width: auto !important;
+  padding: 0;
+}
+
+table.nneditor-table {
+  width: auto !important;
+}
+
+.gLabel {
+  display: inline-block;
+}
+
+.gLabel label {
+  margin-right: 20px;
+  line-height: 22px;
+}
+
+.fWidthFull input[type=text] {
+  width: 100%;
+  height: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-webkit-box: border-box;
+  box-sizing: border-box;
+}
+
+.fWidthFull textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-webkit-box: border-box;
+  box-sizing: border-box;
+}
+
+.fList.typeHor .gLabel {
+  margin-right: 20px;
+}
+
+.fList.typeVer .gLabel {
+  display: block;
+}
+
+.ec-base-chk {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.ec-base-chk {
+  margin: 0 3px 0 0;
+}
+
+.ec-base-chk {
+  display: inline-block;
+  position: relative;
+  margin: 0 8px 0 0;
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+input[type=radio], input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  background: none;
+  border: 1px solid #000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input[type=radio]:checked, input[type=checkbox]:checked {
+  background: #000 !important;
+}
+
+.ec-base-chk input, .findId input[type=radio], .findPw input[type=radio], .xans-member-join .agreeArea .check input[type=checkbox] {
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  color: #000;
+  border: 1px solid #000;
+  position: relative;
+  margin-top: 2px;
+}
+
+.findId input[type=radio]:checked, .findPw input[type=radio]:checked, .ec-base-chk input:checked+.checkbox {
+  background: #352986;
+}
+
+/* 결제진행바 */
+#progressPaybarBackground {
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#progressPaybarView {
+  position: absolute;
+  z-index: 100;
+  top: 160px;
+  left: 20px;
+  width: 471px;
+  font-size: 12px;
+}
+
+#progressPaybarView .box {
+  height: 180px;
+  background: url(//img.cafe24.com/images/ec_hosting/popup/layer_guide/bg_layer_box1.gif) 0 0 no-repeat;
+}
+
+#progressPaybarView .box .graph {
+  padding: 15px 0 0 0;
+  text-align: center;
+}
+
+#progressPaybarView .box .graph span {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#progressPaybarView .box .txt {
+  text-align: center;
+  padding: 15px 0 0;
+  color: #555555;
+}
+
+div.layerProgress {
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  background-color: #999;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  outline: none;
+  background: none;
+}
+
+/* contents */
+#skipNavigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 0;
+}
+
+#skipNavigation p, #skipNavigation ul, #skipNavigation ul li {
+  height: 0;
+}
+
+#skipNavigation p a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+}
+
+#skipNavigation p a:focus, #skipNavigation p a:hover, #skipNavigation p a:active {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  background: #c4122f;
+  color: #fff;
+  z-index: 100;
+}
+
+.displaynone {
+  display: none;
+}
+
+.dimmed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("/web/upload/unfold_design119/css/font/NotoKR-Regular/stylesheet.css");
+@import url("/web/upload/unfold_design119/css/font/NotoKR-Black/stylesheet.css");
+@import url("/web/upload/unfold_design119/css/font/NotoKR-Bold/stylesheet.css");
+@import url("/web/upload/unfold_design119/css/font/NotoKR-DemiLight/stylesheet.css");
+@import url("/web/upload/unfold_design119/css/font/NotoKR-Light/stylesheet.css");
+@import url("/web/upload/unfold_design119/css/font/NotoKR-Medium/stylesheet.css");
+@import url("/web/upload/unfold_design119/css/font/NotoKR-Thin/stylesheet.css");
+
+
+.notokr-regular {
+  font-family: notokr-regular;
+}
+
+.notokr-black {
+  font-family: notokr-black;
+}
+
+.notokr-bold {
+  font-family: notokr-bold;
+}
+
+.notokr-demilight {
+  font-family: notokr-demilight;
+}
+
+.notokr-light {
+  font-family: notokr-light;
+}
+
+.notokr-medium {
+  font-family: notokr-medium;
+}
+
+.notokr-thin {
+  font-family: notokr-thin;
+}
+/* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */

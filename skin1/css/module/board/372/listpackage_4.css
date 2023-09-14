@@ -1,0 +1,11 @@
+/* 게시판 메인 > 상품Q&A */
+.board.xans-board-listpackage-4 { position:relative; }
+.board.xans-board-listpackage-4 h3 { margin:0 0 13px; height:28px; font-size:16px; color:#2e2e2e; border-bottom:2px solid #626672; }
+.board.xans-board-listpackage-4 .more { position:absolute; top:0; right:0; padding:2px; }
+.board.xans-board-listpackage-4 .galleryList { overflow:hidden; }
+.board.xans-board-listpackage-4 .galleryList ul { overflow:hidden; margin:0 -10px; }
+.board.xans-board-listpackage-4 .galleryList li { float:left; position:relative; width:20%; padding:0 0 12px 0; word-break:break-all; }
+.board.xans-board-listpackage-4 .galleryList li span { display:block; margin:0 10px; font-size:11px; color:#a4a4a4; }
+.board.xans-board-listpackage-4 .galleryList li .imgLink,
+.board.xans-board-listpackage-4 .galleryList li .imgLink:hover { display:block; margin:0 10px 5px; font-size:12px; }
+.board.xans-board-listpackage-4 .galleryList li .imgLink img { width:100%; max-height:110px; border:1px solid #ededed; }

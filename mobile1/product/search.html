@@ -1,0 +1,68 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div id="titleArea" module="search_form">
+    <!--@css(/css/module/search/form.css)-->
+    <!--@js(/js/module/search/form.js)-->
+    <h2>검색결과(<span class="count">{$total_count}</span>)건</h2>
+ 
+
+    <div class="searchbox">
+        {$form.keyword}
+        <p class="button"><button type="submit" class="btnStrong">검색</button></p>
+        <button type="button" class="btnDelete">삭제</button>
+
+    </div>
+
+    <div class="inner">
+        {$form.order_by}
+    </div>
+
+    <p class="empty {$search_fail_display|display}">검색 결과가 없습니다.</p>
+</div>
+
+<div module="Search_Result"  class="ec-base-product" style="margin-top:20px;">
+    <!--@js(/js/module/search/result.js)-->
+    <!--
+        $count = 10
+    -->
+   <ul class="prdList grid2">
+     <li  id="anchorBoxId_{$product_no}" class = "grid-item">
+            <div class="thumbnail">
+                <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                <span class="wish">{$list_wish_icon}</span>
+            </div>
+            <div class="description">
+                <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                           <ul module="search_ListItem" class="spec">
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                </ul>
+                <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+               <div class="cart">{$basket_icon}</div>
+            </div>
+        </li>
+      <li  id="anchorBoxId_{$product_no}" class = "grid-item">
+            <div class="thumbnail">
+                <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                <span class="wish">{$list_wish_icon}</span>
+            </div>
+            <div class="description">
+                <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                        <ul module="search_ListItem" class="spec">
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                </ul>
+                <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+               <div class="cart">{$basket_icon}</div>
+            </div>
+        </li>
+                </ul>
+</div>
+
+<div module="search_paging" class="ec-base-paginate typeList">
+    <a href="{$param_before}" class="btnPrev">이전 페이지</a>
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}" class="btnNext">다음 페이지</a>
+</div>

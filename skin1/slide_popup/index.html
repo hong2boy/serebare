@@ -1,0 +1,64 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--@import(/layout/basic/head-tag.html)-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--@css(/layout/basic/css/common.css)--><!--해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요.-->
+<!--@css(/layout/basic/css/slide-pop.css)-->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<body>
+
+  <div class="slide-pop-wrap" style="width:400px;">
+    <p><img src="/Unfold/images/popupSlide/pop-slide-topbanner.jpg"></p>
+  <ul class="pop-btn">
+      <!-- ///////////////////////// 슬라이드 메뉴명 변경 부분입니다. 아래에서 검정색 텍스트만 수정해 주세요 /////////////////////////-->
+      <li><a data-slide-index="0">SEASON OFF</a></li>
+      <li><a data-slide-index="1">BRAND WEEK</a></li>
+      <li><a data-slide-index="2">PLUS POINT</a></li>
+      <!-- ///////////////////////// 슬라이드 메뉴명 변경 부분입니다. END /////////////////////////-->
+    </ul>
+    <div class="slide-pop">
+      <!-- ///////////////////////// 슬라이드 이미지 링크 변경부분입니다. 아래에서 href="#" 의 따옴표 안쪽으로 링크를 넣어주세요.  /////////////////////////-->
+      <div class="pop-slide-item-01"><a href="#" target="_top"><img src="/Unfold/images/popupSlide/pop-slide-01.jpg"></a></div>
+      <div class="pop-slide-item-02"><a href="#" target="_top"><img src="/Unfold/images/popupSlide/pop-slide-02.jpg"></a></div>
+      <div class="pop-slide-item-03"><a href="#" target="_top"><img src="/Unfold/images/popupSlide/pop-slide-03.jpg"></a></div>
+      <!-- ///////////////////////// 슬라이드 이미지 링크 변경부분입니다. END  /////////////////////////-->
+    </div>
+
+  
+
+  </div>
+<div style="clear:both"></div>
+	<div module="Popup_Footer">{$footer}</div>
+<!--jQuery plugIn&Default-->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $.noConflict();
+  </script>
+  <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!--jQuery User-->
+  <script>
+    (function($) {
+      $(function(){
+        $('.slide-pop').bxSlider({
+          speed: 500,  // 슬라이드 넘기는 속도
+          pause: 5000,   // 슬라이드 멈춤 속도
+          pagerCustom: '.pop-btn',
+          auto: true,
+          controls:false,
+          onSliderLoad: function()
+          {
+           $(".slide-pop").css("visibility", "visible");
+          }
+        });
+      });
+    })(jQuery);
+  </script>
+</body>
+
+</html>

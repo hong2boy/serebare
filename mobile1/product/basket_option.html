@@ -1,0 +1,73 @@
+<!--@layout(/layout/basic/layer.html)-->
+
+    
+<div module="Product_OptionSelectLayer" class="ec-base-layer typeModal">
+    <!--@css(/css/module/product/optionSelectLayer.css)-->
+    <h1>옵션 선택</h1>
+    <div class="wrap">
+        <div module="product_detail" class="inner">
+            <h3 class="name">{$name}</h3>
+            <div class="productNormal">
+                <div class="ec-base-table typeWrite gClearCell gClearBorder">
+                    <table border="1" module="product_option">
+                        <caption>상품 옵션</caption>
+                        <colgroup>
+                            <col width="78px;">
+                            <col width="auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr module="product_addoption">
+
+                                <th scope="row">{$add_option_name}</th>
+                                <td>
+                                    <span class="inputWrap">{$form.add_option}</span>
+                                    <span class="txtByte" title="현재글자수/최대글자수">(<strong class="length">0</strong>/{$option_maxlength})</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody module="product_option">
+                            <tr>
+                                <th scope="row">{$option_name}</th>
+                                <td>{$form.option}<p class="value">{$option_desc}</p></td>
+                            </tr>
+                            <tr module="product_quantity" class="quantity">
+                                <th scope="row">수량</th>
+                                <td>
+                                    <img class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29">
+                                    {$form.quantity}
+                                    <img class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29">
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr module="product_fileoption">
+                                <th scope="row">{$file_option_name}</th>
+                                <td class="fileInfo">
+                                    {$form.file_option}
+                                    <ul class="ec-base-help typeDash">
+                                        <li>파일은 최대 5개까지 {$file_option_limit}M 이하로 개별업로드 가능합니다.</li>
+                                        <li>동일상품이 장바구니에 있을 경우 현재 업로드 되는 파일로 교체됩니다.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!--ec-base-table typeWrite gClearCell gClearBorder-->
+            </div><!--productNormal-->
+        
+
+            <div id="{$total.total_price_id}" class="totalPrice">
+                <strong>총상품금액</strong>(수량) :  <span class="{$total.total_cnt}"><strong class="price">0</strong> (0개)</span>
+            </div>
+
+        </div>
+    </div>
+    <div module="product_action" class="ec-base-button gColumn">
+        <a href="#none" class="btnSubmit {$basket_display|display}" onclick="{$action_basket}">장바구니 담기</a>
+        <a href="#none" class="btnEm close">닫기</a>
+    </div>
+    <a href="#none" class="btnClose close">닫기</a>
+    
+        <!-- 네이버 체크아웃 구매 버튼 -->
+                <div id="NaverChk_Button"></div><!-- //네이버 체크아웃 구매 버튼 -->
+</div>

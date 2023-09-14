@@ -1,0 +1,27 @@
+
+<ul id="pagination" class="slider_btn">
+
+				 <!--  //////////////////////  팝업 버튼 이미지 링크 주소 //////////////////////  -->
+                        <li onmouseover="slideshow.pos(0)"><a href="#" target="_top"><img src="/Unfold/images/popup6/popup_btn_01.jpg" alt="" /></a></li>
+                        <li onmouseover="slideshow.pos(1)"><a href="#" target="_top"><img src="/Unfold/images/popup6/popup_btn_02.jpg" alt="" /></a></li>
+                        <li onmouseover="slideshow.pos(2)"><a href="#" target="_top"><img src="/Unfold/images/popup6/popup_btn_03.jpg" alt="" /></a></li>
+                        <li onmouseover="slideshow.pos(3)"><a href="#" target="_top"><img src="/Unfold/images/popup6/popup_btn_04.jpg" alt="" /></a></li>
+                        <li onmouseover="slideshow.pos(4)"><a href="#" target="_top"><img src="/Unfold/images/popup6/popup_btn_05.jpg" alt="" /></a></li>
+                        <li onmouseover="slideshow.pos(5)"><a href="#" target="_top"><img src="/Unfold/images/popup6/popup_btn_06.jpg" alt="" /></a></li>
+                 <!--  //////////////////////  팝업 버튼 이미지 링크 주소 끝  //////////////////////  -->
+			</ul>
+	</div>
+<div style="clear:both"></div>
+	<div module="Popup_Footer">{$footer}</div>
+	<script type="text/javascript">
+	var slideshow=new popup_slider6.slider.slide('slideshow',{
+		id:'popup_slider6-01',
+		navid:'pagination',
+		resume:true,
+        auto:3,
+		position:0,
+		activeclass:'current',
+        vertical:false
+		
+	});
+	</script>

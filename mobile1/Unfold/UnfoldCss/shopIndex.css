@@ -1,0 +1,412 @@
+/* shop-index-slide */
+#sh_shopSlide {
+  opacity: 0;
+}
+
+#sh_shopSlide.on {
+  opacity: 1;
+}
+
+.ec-base-product-mini .prdList>li {
+  border-top: 4px solid #505050;
+  border-bottom: 1px solid #ececec;
+  width: 86% !important;
+  margin-bottom: 5% !important;
+}
+
+.swiper-pagination {
+  z-index: 1;
+}
+
+.shop-index-slide {
+  position: relative;
+}
+
+.shop-index-top {
+  position: relative;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.shop-index-top .swiper-button-prev {
+  background-image: url('/Unfold/resource/arrow-prev-w.png');
+}
+
+.shop-index-top .swiper-button-next {
+  background-image: url('/Unfold/resource/arrow-next-w.png');
+}
+
+.shop-index-top .swiper-button-next, .shop-index-top .swiper-button-prev {
+  background-size: 25px auto;
+}
+
+.shop-index-top .swiper-pagination-bullet-active {
+  background: #000000;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.shop-index-top .swiper-pagination {
+  position: relative;
+  bottom: 22px;
+}
+
+.shop-index-top .swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 47%;
+}
+
+.shop-index-top .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  float: left;
+  left: 15px;
+}
+
+.name-txt {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 149%;
+}
+
+:root {
+  --swiper-navigation-size: 33px;
+  --swiper-theme-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.shop-index-top .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  float: right;
+  right: 15px;
+}
+
+/* shop-index-slide */
+/* shop-index-slide BxSliderPager*/
+#bx-pager {
+  position: absolute;
+  cursor: pointer;
+  position: absolute;
+  bottom: -22px;
+  left: 32px;
+  cursor: pointer;
+  background: #fff;
+  padding: 20px 61px 18px 29px;
+  box-shadow: 8px 7px 0px -1px rgba(210, 210, 210, 0.33);
+  min-width: 280px;
+}
+
+.pagerItem {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.pagerLineWrap {
+  margin-right: 11px;
+  display: inline-block;
+  width: 5px;
+  background: #000;
+  height: 1px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+.pagerLine {}
+
+.pagerText {
+  display: inline-block;
+  color: #000;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  font-size: 11px;
+  color: #000;
+}
+
+.pagerItem.active .pagerText {
+  color: #000;
+  font-size: 20px;
+}
+
+.pagerItem.active .pagerLineWrap {
+  width: 38px;
+  background: #000;
+  height: 2px;
+}
+
+.pagerItem.active .pagerLineWrap .pagerText {}
+
+/* shop-index-slide BxSliderPager*/
+/* shop-index-slide BxSliderControll*/
+.shop-index-slide .bx-wrapper .bx-next:hover, .shop-index-slide .bx-wrapper .bx-next:focus {
+  background-position: center;
+  /* bxslider cdn css에 포지션을 바꾸는 내용이 있어서 덮어씌우기 위한 내용. 아래 next의 background-position: 과 맞춰줄것 */
+}
+
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+  background-position: center;
+}
+
+.shop-index-slide .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  bottom: 20px;
+  width: 33px;
+  height: 33px;
+  z-index: 0;
+  overflow: hidden;
+  /* opacity: 0.5; */
+  top: auto;
+  cursor: pointer;
+  background-size: 26px;
+  padding: 4px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.shop-index-slide .bx-wrapper .bx-controls-direction a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bx-wrapper .bx-next {
+  background: none;
+}
+
+.shop-index-slide .bx-prev {
+  background: #fff url(/web/upload/unfold_design118/arrow-up.svg) no-repeat center;
+  left: auto;
+  right: 29px;
+  bottom: 62px !important;
+}
+
+.shop-index-slide .bx-next {
+  background: #fff url(/web/upload/unfold_design118/arrow-down.svg) no-repeat center;
+  left: auto;
+  right: 29px;
+  bottom: 28px !important;
+}
+
+.title-comm {
+  text-align: center;
+}
+
+.title-comm h2 {
+  font-size: 14px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+/* shop-index-slide BxSliderControll*/
+.ver-list-g3 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.ver-list-g3 .promotion-list .title-box p {}
+
+.ver-list-g3 .promotion-list .title-box h4 {}
+
+.ver-list-g3 .promotion-list .title-box img {
+  width: 100%;
+}
+
+.shop-index-sale {
+  overflow: hidden;
+  width: 87%;
+  margin: 0 auto;
+  min-width: 870px;
+}
+
+.shop-index-movie {
+  background: #e6e6e6;
+  padding-bottom: 4%;
+  /* padding-top: 57px; */
+  margin-top: 41px;
+  border-top: 7px solid #131313;
+}
+
+.shop-index-movie .shop-index-movie-ap {}
+
+.shop-index-movie .movie-wrap-w {}
+
+.shop-index-movie .r-cont-box {}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt {
+  background: #fff;
+  /* margin-top: 18px; */
+  /* margin-right: 19px; */
+  /* margin-bottom: 40px; */
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt-wrap {
+  padding: 12px 28px;
+}
+
+.shop-index-movie .r-cont-box .border-short {
+  width: 35px;
+  border-bottom: 4px solid #272727;
+  margin: initial;
+  margin-bottom: 16px;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt h2 {
+  font-size: 31px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  padding-top: 21px;
+  margin-bottom: 10px;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt h3 {
+  color: #8c8c8c;
+  /* font-weight: normal; */
+  font-family: 'Montserrat', 'Noto Sans KR', AppleGothic, sans-serif;
+  margin-bottom: 35px;
+}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt h4 {}
+
+.shop-index-movie .r-cont-box .r-cont-box-txt .go-btn {
+  margin-top: 20px;
+  background: #1d1d1d;
+  width: 150px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px solid #1d1d1d;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+/* 메인2개배너&써클이미*/
+.product-main-list-02 {
+  margin: 0 auto;
+  margin-bottom: 150px;
+  margin-top: 56px;
+  width: 90%;
+}
+
+.product-main-list-02 h2 {
+  margin-bottom: 11px;
+  font-size: 19px;
+  position: relative;
+}
+
+.product-main-list-02 .title-pro {
+  margin-bottom: 10px
+}
+
+.product-main-list-02 .banner-clear {
+  overflow: hidden;
+}
+
+.product-main-list-02 {
+  text-align: center;
+}
+
+.product-main-list-02 .banner-01 {
+  margin-bottom: 10px;
+}
+
+.product-main-list-02 .banner-01 img {
+  width: 100%;
+  transition: all 4.4s ease-out;
+}
+
+.product-main-list-02 .banner-02 {}
+
+.product-main-list-02 .banner-02 img {
+  transition: all 4.4s ease-out;
+  width: 100%;
+}
+
+.product-main-list-02 .banner-02:hover img {
+  -webkit-transform: scale(1.05);
+  transition: all 4.4s ease-out;
+  transform: scale(1.1);
+}
+
+.product-main-list-02 .banner-01:hover img {
+  -webkit-transform: scale(1.05);
+  transition: all 4.4s ease-out;
+  transform: scale(1.1);
+}
+
+.product-main-list-02 .mini-banner {
+  clear: both;
+  padding-top: 15px;
+  width: 89%;
+  margin: 0 auto;
+}
+
+.text-l-all {
+  float: left;
+  text-align: left;
+}
+
+.product-main-list-02 .mini-banner .mini-banner-list {
+  clear: both;
+  margin-left: 4%;
+  margin-right: 4%;
+  cursor: pointer;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 16px;
+  margin-top: 14px;
+  overflow: hidden;
+  padding-bottom: 7px;
+}
+
+.product-main-list-02 .mini-banner .banner-circle {
+  width: 101px;
+  float: right;
+}
+
+.product-main-list-02 .mini-banner .banner-circle img {
+  width: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.txt-sub-02 {
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.txt-sub-02-gray {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-bottom: 10px;
+}
+
+.border-s-gray {
+  border-top: 3px solid #dcdcdc;
+  width: 25px;
+  margin-bottom: 10px;
+}
+
+.txt-sub-01-gray {
+  font-size: 12px;
+  color: #8c8c8c;
+  margin-bottom: 10px;
+}
+
+.product-main-list-02 h5 {
+  font-size: 18px;
+  color: #8c8c8c;
+  font-weight: normal;
+  margin-bottom: 10px;
+  line-height: 127%;
+}

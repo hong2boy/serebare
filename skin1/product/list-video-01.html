@@ -1,0 +1,215 @@
+<!--@layout(/layout/basic/layout.html)-->
+<link rel="stylesheet" href="/Unfold/UnfoldCss/list-video.css">
+
+
+<style>
+.xans-product-menupackage .title h2 {font-size:24px !important;}
+  .contents-wrap {width:100%;    max-width: 100%;    margin-top: 109px;}
+  .ec-base-product ul.grid2 > li {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .ec-base-product .name {text-align:left; margin-top:23px;}
+  .ec-base-product .name span {font-size:17px !important; color:#000;}
+  .ec-base-product .simple {text-align:left; margin-top:14px; margin-bottom:30px;}
+  .ec-base-product .simple a {font-size:11px !important;  color:#8c8c8c;}
+  .xans-product-menupackage {margin-bottom:100px;}
+    .xans-product-menupackage .menuCategory {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    background: #f1f1f1;
+    padding: 24px;
+    margin-top: 23px;
+}
+    .ec-base-product .prdList>li .pro-list-info-wrap .name {margin-bottom:0 !important; }
+    .ec-base-product .name span {
+    font-size: 14px !important; }
+    .ec-base-product .prdList>li .pro-list-info-wrap .name .name-txt span {
+    text-decoration: none !important;
+}
+    .ec-base-product .prdList>li .thumbnail .cart-over {
+    cursor: pointer;
+    font-size: 0;
+    text-align: center;
+    transition: all 0.2s ease-out;
+    height: 100%;
+  opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    border:none;
+    border-top: 0;
+    background: rgba(0,0,0,0.2);
+}
+    .ec-base-product .prdList>li .thumbnail .cart-over .zoomView {
+    float: none;
+    border-right: 0;
+    height: 26px;
+    width: 40px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+            width: 100%;
+    height: 100%;
+       
+}
+    .ec-base-product .prdList>li .thumbnail .cart-over .zoomView img {
+    width: 18px;
+  display: inline-block;
+  
+    padding: 58% 46%;
+}
+    
+</style>
+
+
+
+  <div module="Product_menupackage">
+    <!--@css(/css/module/product/menupackage.css)-->
+    <!--@js(/js/module/product/menucategory.js)-->
+    <div class="path" module="product_headcategory">
+      <span>현재 위치</span>
+      <ol>
+        <li><a href="/">홈</a></li>
+        <li class="{$disp_cate_1|display}"><a href="{$link_product_list_1}">{$name_1}</a></li>
+        <li class="{$disp_cate_2|display}"><a href="{$link_product_list_2}">{$name_2}</a></li>
+        <li class="{$disp_cate_3|display}"><a href="{$link_product_list_3}">{$name_3}</a></li>
+        <li class="{$disp_cate_4|display}"><strong><a href="{$link_product_list_4}">{$name_4}</a></strong></li>
+      </ol>
+    </div>
+
+
+    <div class="title" module="product_headcategory">
+     
+      <h2><span>VIDEO</span></h2>
+
+    </div>
+
+    <ul class="menuCategory">
+      <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+      <li module="product_displaycategory" style="display:{$display};" class="{$selected}">
+        <a href="/product/list-video.html?{$param_cate_no}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+        <ul module="product_children">
+          <li class="{$selected}">
+            <a href="/product/list-video.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+            <div class="button">
+              {$children_icon}
+              <ul module="product_children" class="subCategory">
+                <li class="{$selected}"><a href="/product/list-video.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                <li class="{$selected}"><a href="/product/list-video.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="{$selected}">
+            <a href="/product/list-video.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+            <div class="button">
+              {$children_icon}
+              <ul module="product_children" class="subCategory">
+                <li class="{$selected}"><a href="/product/list-video.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                <li class="{$selected}"><a href="/product/list-video.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li><!-- //참고 -->
+    </ul>
+  </div>
+
+
+
+
+
+      <div class="wrap-90">
+
+    
+      <div module="product_listnormal" class="ec-base-product">
+      <!--
+        $count = 100
+        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+      -->
+   
+      <ul class="prdList grid4">
+          <li id="anchorBoxId_{$product_no}" class="grid-item">
+
+          <div class="thumbnail">
+
+            <div name="anchorBoxName_{$product_no}" class="image-box" >
+              <div class="prdImgFront">
+                <img src="{$image_medium}"alt="" class="thumb" />
+              </div>
+              <img src="{$image_tiny}"alt="" class="thumb thumb-over" />
+         
+            </div><!-- image-box -->
+            <div class="cart-over">
+              <div class="zoomView">{$zoom_icon}</div>
+      
+            </div><!--cart-over-->
+
+
+          </div><!--thumbnail-->
+          <div class="information-wrap">
+
+            <div class="pro-list-info-wrap">
+           
+              <div class="name">
+                <div class="name-txt"><a class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+              </div><!--name-->
+
+              <p>{$simple_desc}</p>
+            
+
+            </div><!--pro-list-info-wrap-->
+          </div><!--information-wrap-->
+        </li>
+          <li id="anchorBoxId_{$product_no}" class="grid-item">
+
+          <div class="thumbnail">
+
+            <div name="anchorBoxName_{$product_no}" class="image-box" >
+              <div class="prdImgFront">
+                <img src="{$image_medium}"alt="" class="thumb" />
+              </div>
+              <img src="{$image_tiny}"alt="" class="thumb thumb-over" />
+         
+            </div><!-- image-box -->
+            <div class="cart-over">
+              <div class="zoomView">{$zoom_icon}</div>
+      
+            </div><!--cart-over-->
+
+
+          </div><!--thumbnail-->
+          <div class="information-wrap">
+
+            <div class="pro-list-info-wrap">
+           
+              <div class="name">
+                <div class="name-txt"><a class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></div>
+              </div><!--name-->
+
+              <p>{$simple_desc}</p>
+            
+
+            </div><!--pro-list-info-wrap-->
+          </div><!--information-wrap-->
+        </li>
+      </ul>
+    </div><!-- module="product_listmain_10" -->
+
+
+      </div><!--wrap-80-->
+
+  </div>
+  <script src="/Unfold/UnfoldJs/listVideo.min.js"></script>

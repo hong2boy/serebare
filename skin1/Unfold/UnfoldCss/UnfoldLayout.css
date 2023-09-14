@@ -1,0 +1,321 @@
+/* index를 제외한 공통 header CSS */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+html * { font-family: 'NanumSquare', AppleGothic, '돋움',sans-serif }
+
+/* .cs-menu-01 .search   */
+cs-menu-02>ul>li::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  left: -11px;
+  top: 24%;
+  border-top: 1px solid #000;
+}
+
+.cs-menu-02 .top-count {
+  color: #000;
+  font-size: 8px;
+  display: inline-block;
+  margin-left: 5px;
+  /*
+      background: #ffffff;
+      padding: 1px 5px 1px 4px;
+      border-radius: 2px;
+      margin-left: 7px;
+      vertical-align: text-bottom;
+      /* border: 1px solid rgba(255,255,255,0.3); */
+}
+
+.cs-menu-02 {
+  float: right;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  height: 15px;
+  padding-right: 9px;
+  margin-right: 15px;
+  margin-top: 8px;
+}
+
+.cs-menu-02>ul>li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-right: 18px;
+  position: relative;
+  padding-bottom: 16px;
+  vertical-align: middle;
+}
+
+.cs-menu-02>ul>li:last-child {
+  margin-right: 22px;
+}
+
+.cs-menu-02 .t-ico-arrow {
+  padding-right: 0;
+  padding-left: 9px;
+  padding-top: 2;
+  position: absolute;
+  font-size: 10px;
+  top: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.mypage-menu:hover .t-ico-arrow {
+  top: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.mypage-menu>ul {
+  position: absolute;
+  border: 1px solid #313131;
+  width: 150px;
+  left: -50px;
+  top: 26px;
+  line-height: 232%;
+  /* padding-top: 7px; */
+  display: none;
+  background: #fff;
+}
+
+.mypage-menu:hover ul {
+  display: block;
+}
+
+.mypage-menu>ul>li {
+  transition: all 0.4s ease-out;
+  height: 30px;
+  line-height: 30px;
+}
+
+/*
+
+.mypage-menu>ul>li:first-child {padding-top: 7px;}
+
+.mypage-menu>ul>li:last-child {padding-bottom: 7px;}*/
+.mypage-menu>ul>li:hover {
+  background: #313131;
+  transition: all 0.4s ease-out;
+}
+
+.mypage-menu>ul>li:hover a {
+  color: #fff;
+  transition: all 0.4s ease-out;
+}
+
+.mypage-menu>ul>li>a {
+  color: #000;
+  transition: all 0.4s ease-out;
+}
+
+/* .cs-menu-02 */
+/* .menu__after-move */
+/* .menu__after-move */
+
+/* .top-gnb-02 */
+
+
+
+/* .top-gnb-02 */
+/* #lnb */
+#lnb {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 85px;
+  z-index: 100;
+  border-right: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.left-menu {
+  position: absolute;
+  top: 50%;
+  font-size: 16px;
+  padding-left: 11px;
+  z-index: 105;
+  margin-top: -65px;
+  left: 20px;
+}
+
+.left-menu a {
+  display: inline-block;
+  /* width: 100px; */
+  padding-right: 35px;
+}
+
+.left-menu i {
+  position: relative;
+  color: #000;
+  transition: all 1s;
+}
+
+.left-menu i:hover {
+  color: #f00;
+}
+
+.left-menu>div {
+  margin-bottom: 25px;
+  margin-left: 3px;
+  position: relative;
+}
+
+.left-menu .top-menu-box {
+  position: absolute;
+  text-align: center;
+  width: 122px;
+  background: #fff;
+  font-size: 8px;
+  padding: 4px 4px 2px 4px;
+  line-height: 207%;
+  left: 18px;
+  top: -10px;
+  display: none;
+  border: 1px solid #dcdcdc;
+}
+
+.left-menu .top-menu-box a {
+  padding-right: 0px;
+  color: #000;
+  display: block;
+}
+
+.left-menu .login-p {
+  z-index: 1;
+  font-size: 13px;
+  padding: 12px;
+  left: 51px;
+}
+
+.left-menu .user-main:hover .login-p {
+  display: block;
+}
+
+.left-menu .wish-main:hover .wish-p {
+  display: block;
+}
+
+.left-menu .count {
+  position: absolute;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  min-width: 23px;
+  height: 23px;
+  background: #4c4c4c;
+  color: #fff;
+  line-height: 23px;
+  font-size: 11px;
+  top: -7px;
+  left: 11px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.left-menu .cart-cnt {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  font-size: 13px;
+  margin-left: 5px;
+  font-family: sans-serif;
+}
+
+.left-menu .cart-cnt-01 {
+  font-size: 13px;
+}
+
+.left-menu .cart-cnt-02 {
+  font-size: 13px;
+  color: #4b66ff;
+  padding-left: 2px;
+}
+
+/* #lnb */
+/* category */
+#category {
+  position: fixed;
+  background: #fff;
+
+  width: 100%;
+  left: 0px;
+  z-index: 9;
+  clear: both;
+  top: 74px;
+
+}
+
+
+#category .position {
+  border-bottom: 1px solid #f5f5f5;
+
+}
+
+#category .position>ul {
+  text-align: center;
+}
+
+#category .position>ul>li {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+#category .position>ul>li>a {
+  display: block;
+  padding: 18px 36px;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+#category .position>ul>li>a:hover,
+#category .position>ul>li.selected>a,
+#category .position>ul>li.on>a {
+  text-decoration: underline;
+}
+
+#category .sub-category {
+  position: absolute;
+  top: 51px;
+  left: 0%;
+  width: 190px;
+  height: auto;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  z-index: 1000;
+  text-align: left;
+  padding: 20px;
+  color: #000;
+  font-size: 14px;
+}
+
+#category .sub-category ul {}
+
+#category .sub-category li {
+  padding: 0 10px;
+}
+
+#category .sub-category li:first-child {}
+
+#category .sub-category li:last-child {}
+
+#category .sub-category li:first-child a {
+  padding-top: 5px;
+}
+
+#category .sub-category a {
+  display: block;
+  padding: 7px 0;
+  font-size: 13px;
+  color: #000 !important;
+  text-decoration: none;
+}
+
+#category .sub-category a:hover,
+#category .sub-category li.selected a {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+/* category */

@@ -1,0 +1,215 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/css/module/board/listPackage-01.css)-->
+
+
+<style>
+  .ec-base-button.typeBG {
+    padding: 10px 20px; padding-top:100px;
+    border: 0;
+    background: #fff;
+  }
+  .xans-board-title .title h2 {font-size:22px; color:#333 !important;
+  }
+  .xans-board-title .title h2 {padding-left:0;
+  }
+  img {border:0;vertical-align:top
+  }
+
+  .grid{
+    margin:0 auto;
+    width:110%
+  }
+  .gutter-sizer{
+    width:1%;
+  }
+  .grid-sizer, .grid-item {
+    width:21.7%;
+    margin-bottom: 2%;
+    padding:0%;
+  }
+  .grid .grid-item .box{
+    position:relative;
+    margin:0 auto;
+    /*top:10px;
+    left:10px*/
+    /*top, left 를 조정하면 됩니다.*/
+  }
+
+  /*두개의 grid를 방향을 다르게 할경우 클래스를 달리해서 적용하면 됩니다*/
+  .grid-wrap.g1 .grid .grid-item .box{
+    top:10px;
+    left:0px
+  }
+  .grid-wrap.g2 .grid .grid-item .box{
+    top:0px;
+    left:10px
+  }
+  .xans-board-title .title {
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 50px;
+  }
+  .xans-board-title .title h2 {
+    margin-top: 33px;
+    margin-bottom: 29px;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  .xans-board-title .title .text-01 {
+    font-size: 15px;
+    color: #424242;
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+  .xans-board-title .title .text-02 {
+    color: #f00;
+    font-size: 15px;
+  }
+  .xans-board-title .title h3 {
+    font-size: 21px;
+    margin-bottom: 13px;
+  }
+</style>
+<div>
+
+
+  <div module="Board_ListPackage_4">
+
+    <div module="board_title_4">
+      <div class="path">
+        <span>현재 위치</span>
+        <ol>
+          <li><a href="/">홈</a></li>
+          <li><a href="/board/index.html">게시판</a></li>
+          <li title="현재 위치"><strong>{$board_name}</strong></li>
+        </ol>
+      </div>
+
+      <div class="title">
+        <h2>{$board_title} </h2>
+
+        <!-- 후기 게시판 타이틀 부분입니다. 아래에서 검정색 텍스트를 수정해 주세요 -->
+
+        <h3>  [ 9월 넷째주 ] </h3>
+
+        <span class="text-01"> PHOTO REVIEW BEST </span>
+
+        <!-- <span class="text-02"> (포토후기 1등 1명 적립금 30,000원) </span> -->
+
+        <!-- 후기 게시판 타이틀 부분입니다.  END -->
+
+
+        <p class="imgArea">{$board_top_image}</p>
+
+
+
+
+      </div>
+
+    </div>
+
+    <div class="boardSort">
+      <span module="board_category_4">{$form.board_category}</span>
+    </div>
+
+    <div class="review-board-4" >
+      <div class="grid-wrap g1">
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <div class="gutter-sizer"></div>
+
+          <div module="board_list_4" >
+            <!--
+              $count = 24
+              $login_page_url = /member/login.html
+              $deny_access_url = /index.html
+            -->
+            <ul>
+              <li class="grid-item">
+                <div class="box">
+                  <div class="main">
+                    <div class="cont-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+
+                    <div class="cont-box-all">
+                      <div class="cont-box"><a href="/board/product-01/read.html{$param_read}"><span class="pro-thumb-img">{$product_img}</span>{$subject}</a></div>
+
+                      <div class="review-cont">{$content}</div>
+                      <div class="review-point"><img src="/Unfold/resource/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                      <div class="writer">{$writer}</div>
+
+                      <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+                      <div class="{$hit_display|display} count"><i class="ti-eye"></i><span>view</span><span class="txtNum">{$hit_count}</span></div>
+                    </div><!--cont-box-all-->
+                  </div>
+                </div>
+              </li>
+              <li class="grid-item">
+                <div class="box">
+                  <div class="main">
+                    <div class="cont-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+
+                    <div class="cont-box-all">
+                      <div class="cont-box"><a href="/board/product-01/read.html{$param_read}"><span class="pro-thumb-img">{$product_img}</span>{$subject}</a></div>
+
+                      <div class="review-cont">{$content}</div>
+                      <div class="review-point"><img src="/Unfold/resource/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                      <div class="writer">{$writer}</div>
+
+                      <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+                      <div class="{$hit_display|display} count"><i class="ti-eye"></i><span>view</span><span class="txtNum">{$hit_count}</span></div>
+                    </div><!--cont-box-all-->
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><!--grid-->
+      </div><!--grid-wrap g1-->
+
+      <div class="boardListEmpty {$empty_display|display}" module="board_empty_4">
+        <p>{$empty_message}</p>
+      </div>
+
+      <div module="board_ButtonList_4" class="{$write_display|display} ec-base-button typeBG">
+        <span class="gRight">
+          <a href="/board/product-01/write.html{$param_write}" class="btnSubmitFix sizeS {$write_display|display}">글쓰기</a>
+        </span>
+      </div>
+    </div>
+
+    <div module="board_paging_4" class="ec-base-paginate">
+      <a href="{$param_prev}"><i class="ti-angle-left"></i></a>
+      <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+      </ol>
+      <a href="{$param_next}"><i class="ti-angle-right"></i></a>
+    </div>
+
+  </div><!--class="review-board"-->
+
+
+  <script>
+    (function($) {
+      $(document).ready(function() {
+
+        $('.review-board-4').imagesLoaded( function() {
+
+          var $grid=$('.grid').masonry({
+            percentPosition: true,
+            gutter: '.gutter-sizer',
+            columnWidth: '.grid-sizer',
+
+            itemSelector: '.grid-item',
+            transitionDuration: '0.2s'
+          });
+        });
+
+      });
+    })(jQuery);
+
+  </script>
+
+</div>

@@ -1,0 +1,113 @@
+.xans-layout-searchside {
+  width: 90%;
+  margin: 0 auto;
+    text-align:center;
+}
+
+.xans-layout-searchside h2 {
+  height: 20px;
+  color: #9;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 26px;
+  font-weight: normal;
+}
+
+.xans-layout-searchside fieldset {
+    /* width: 97%; */
+    border-radius: 0;
+    /* border: 1px solid #dcdcdc; */
+    /* border-left: 0; */
+
+}
+
+.xans-layout-searchside #keyword {
+    height: 43px;
+    border: 0;
+    border-right: 1px solid #424242;
+    line-height: 32px;
+    font-size: 23px;
+    color: #2e2e2e;
+    background: #fff;
+    margin-right: 10px;
+    border-radius: 0;
+}
+
+.xans-layout-searchside .bestKeyword {
+  margin: 7px 0;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.xans-layout-searchside .bestKeyword a {
+  color: #757575;
+  text-decoration: none;
+}
+
+.xans-layout-searchside .bestKeyword a:hover {
+  color: #008bcc;
+}
+
+.xans-layout-searchside .bestKeyword a:after {
+  content: ", "
+}
+
+.xans-layout-searchside p.button {
+  margin: 10px 0 0;
+  margin-top: 54px;
+  text-decoration: underline;
+}
+
+.xans-layout-searchside p.button a {
+  margin: 0 0 0 4px;
+  color: #fff;
+}
+
+.xans-layout-searchside .ti-search {
+    font-size: 21px;
+    color: #000;
+    padding-left: 3px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    padding: 10px 14px;
+    vertical-align: top;
+    margin-left: -15px;
+    background: #fff;
+        border-left: 1px solid #8c8c8c;
+}
+
+.xans-layout-searchside .popular {
+  margin-top: 35px;
+}
+
+.xans-layout-searchside .popular strong {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  color: #fff;
+
+  padding-top: 4px;
+  font-size: 13px;
+}
+
+.xans-layout-searchside .popular p {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+        margin-top: 20px;
+    line-height: 160%;
+}
+
+.xans-layout-searchside .popular p a {
+  padding-left: 10px;
+  font-size: 18px !important;
+  vertical-align: middle;
+    color:#fff;
+}
+
+input:-internal-autofill-previewed, input:-internal-autofill-selected,
+textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+  background-color: rgb(255, 255, 255) !important;
+}

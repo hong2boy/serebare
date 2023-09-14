@@ -1,0 +1,29 @@
+ <div class="search-popup">
+              <p class="close-btn"><i class="ti-close"></i></p>
+
+              <div module="Layout_SearchSide">
+                <!--@css(/css/module/layout/searchSide.css)-->
+                <!--
+                  $search_page = /product/search.html
+                  $product_page = /product/detail.html
+                -->
+                <h2>상품검색하기</h2>
+                <fieldset>
+                  <legend>검색</legend>
+                  {$form.keyword}
+                  <i class="ti-search" onclick="{$action_search_submit}"></i>
+
+                </fieldset>
+
+                <div class="popular" module="search_hotkeyword">
+                  <strong>인기검색어</strong>
+                  <p>
+                    <a href="{$hot_keyword_url}">#{$hot_keyword_name}</a>
+                    <a href="{$hot_keyword_url}">#{$hot_keyword_name}</a>
+                  </p>
+                </div>
+                <p class="button"><a href="/product/search.html" class="btnLink">상품 상세 검색 바로가기</a></p>
+              </div><!-- module="Layout_SearchSide"-->
+
+
+            </div><!--search-popup-->

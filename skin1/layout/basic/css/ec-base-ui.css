@@ -1,0 +1,39 @@
+/* Font */
+.txtInfo { color:#707070; }
+.txtWarn { color:#000;  font-weight:bold;}
+.txtEm { color:#000; }
+.txtDel, .strike, .discount { text-decoration:line-through; font-weight:normal; }
+.strike strong, .discount strong { font-weight:normal; }
+.txtNormal { font-weight:normal; font-style:normal; }
+.txtNum { display:inline-block; font-size:11px; color:#939393; word-break:normal; }
+.txt11 { font-size:11px; }
+.txt12 { font-size:12px; }
+.txt14 { font-size:14px; }
+.txt16 { font-size:25px; }
+.txt18 { font-size:18px; letter-spacing:-1px; }
+.txtIcon { font-size:12px; font-style:normal; }
+.txtBreak { word-break:break-all; word-wrap:break-word; }
+  /* JP, TW, CN */
+  html:lang(ja) .txt11,
+  html:lang(zh) .txt11,
+  html:lang(zh-tw) .txt11 { font-size:12px; }
+
+/* grid */
+.gBlank5 { display:block; margin-top:5px; }
+.gBlank10 { display:block; margin-top:10px; }
+.gBlank20 { display:block; margin-top:20px; }
+.gBlank30 { display:block; margin-top:30px; }
+.gIndent10 { margin-left:10px; }
+.gIndent20 { margin-left:20px; }
+.gSpace10 { margin-right:10px; }
+.gSpace20 { margin-right:20px; }
+.gMerge { position:relative; z-index:1; margin-top:-1px; }
+
+/* ec-base-qty */
+.ec-base-qty { position:relative; display:inline-block; width:50px; margin:0 1px 0 0; text-align:left; }
+.ec-base-qty input[type="text"] { width:22px; height:23px; padding:0 0 0 5px; line-height:25px; border:1px solid #d4d8d9; border-radius:3px 0 0 3px; }
+.ec-base-qty .up { position:absolute; left:27px; top:0; }
+.ec-base-qty .down { position:absolute; left:27px; bottom:0; }
+
+
+

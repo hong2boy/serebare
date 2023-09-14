@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+      <div id = "sh_TwoColumn" module="product_listmain_2" class="ec-base-product on_off_select">
+        <!--
+          $count = 8
+          ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+          ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+          $basket_result = /product/add_basket.html
+          $basket_option = /product/basket_option.html
+        -->
+        <div class="title-comm">
+          <h2>
+            <span style="display: {$category_title_text_display};">{$category_title_text}</span>
+            <span style="display: {$category_title_img_display};"><img src="{$category_title_img}" alt="{$category_title_text}" /></span>
+          </h2>
+        </div>
+
+
+
+
+        <ul class="prdList grid2">
+          <li>
+            <div class="thumbnail">
+              <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+              <span class="wish">{$list_wish_icon}</span>
+            </div>
+            <div class="description">
+              <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+              <ul class="spec">
+                <li class="simple"><a href="/product/detail.html{$param}">{$simple_desc}</a></li>
+                <li class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</li>
+                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                <li class="cart">{$basket_icon}</li>
+
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="thumbnail">
+              <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+              <span class="wish">{$list_wish_icon}</span>
+            </div>
+            <div class="description">
+              <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+              <ul class="spec">
+                <li class="simple"><a href="/product/detail.html{$param}">{$simple_desc}</a></li>
+                <li class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</li>
+                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                <li class="cart">{$basket_icon}</li>
+
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+
+
+
+      </div><!-- module="product_listmain_2" -->

@@ -1,0 +1,20 @@
+#searchForm #titleArea { background-color:transparent; border-bottom:0; }
+#searchForm #titleArea span.count { position:static; color:#000; }
+#searchForm #titleArea h2 { border-bottom:1px solid #c2c2c2; background:#fff; padding-bottom:15px;}
+
+.xans-search-form .empty { padding:93px 0 59px; color:#000; text-align:center; font-size:17px; background:url("//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/m112_unfold/ico_search.png") center 28px no-repeat #fff;
+    background-size:37px; margin-top:50px;}
+
+.xans-search-form .searchbox { position:relative; padding:20px 65px 20px 14px; border-bottom:1px solid #d1d1d1; background:#fff; }
+.xans-search-form .searchbox input#keyword { width:100%; padding:0 30px 0 12px; height:39px; }
+.xans-search-form .searchbox .button { width:60px; position:absolute; top:20px; right:10px; text-align:right; }
+.xans-search-form .searchbox .button .btnStrong { height:38px; }
+.xans-search-form .searchbox .btnDelete {
+    overflow: hidden; position: absolute; right: 75px; top: 30px; width: 20px; height: 20px;
+    border: 0; cursor: pointer; text-indent: 100%; font-size: 0; white-space: nowrap;
+    background: url("//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/m112_unfold/btn_delete.png") no-repeat 0 0; background-size: 20px 20px;
+ }
+.xans-search-form .inner { overflow:hidden; padding:7px 14px 6px; border-bottom:1px solid #ececec; background:#f1f1f1; }
+.xans-search-form .inner p { float:left; }
+.xans-search-form .inner p.button { float:right; padding:2px 0 0; }
+.xans-search-form .inner .button img { display:block; border:1px solid red; }

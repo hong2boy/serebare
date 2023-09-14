@@ -1,0 +1,171 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--@js(/js/masonry.pkgd.min.js)-->
+<!--@js(/js/jquery.DB_masonry_more.js)-->
+ <!--@css(/css/module/board/listPackage-01.css)-->
+
+<style>
+    .ec-base-button.typeBG {
+    padding: 10px 20px; padding-top:100px;
+    border: 0;
+    background: #fff;
+}
+    .xans-board-title .title h2 {font-size:22px; color:#333 !important;}
+.xans-board-title .title h2 {padding-left:0;}
+img {border:0;vertical-align:top}
+
+.grid{margin:0 auto; width:98%;margin-left: 2%;}
+.grid-sizer, .grid-item { width:47%; margin-bottom: 2%; padding:0%;}
+.grid-wrap {}
+
+.grid .grid-item .box{position:relative;margin:0 auto;display:none;opacity:0;/*top:10px;left:10px*/ } /*top, left 를 조정하면 됩니다.*/
+
+.grid-more{display:block;background:#ccc;padding:20px;text-align:center;width:100px;margin:50px auto}
+.grid-more.off{display:none}
+
+/*두개의 grid를 방향을 다르게 할경우 클래스를 달리해서 적용하면 됩니다*/
+.grid-wrap.g1 .grid .grid-item .box{top:10px;left:0px}
+.grid-wrap.g2 .grid .grid-item .box{top:0px;left:10px}
+.xans-board-title .title {
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 50px;
+}
+  .xans-board-title .title h2  {    margin-top: 33px;
+    margin-bottom: 29px;
+    font-size: 27px;
+    font-weight: 500;}
+  .xans-board-title .title .text-01 {      font-size: 15px;
+    color: #424242;
+    font-weight: 700;
+    margin-bottom: 7px;}
+       .xans-board-title .title .text-02 {    color: #f00;
+    font-size: 15px;}
+ .xans-board-title .title h3 {  font-size: 21px;
+    margin-bottom: 13px;}
+
+</style>
+
+<div module="Board_ListPackage_4">
+
+    <div id="titleArea" module="board_title_4">
+          <h2 style="font-size: 16px; font-weight: 600; margin-bottom: -9px;padding-top:30px;">{$board_name}</h2>
+            <div class="title">
+       
+            <h3>  [ 9월 넷째주 ] </h3>
+
+             <div class="text-01"> PHOTO REVIEW BEST </div>
+ 
+            <div class="text-02"> (포토후기 1등 1명 적립금 30,000원) </div>
+            <div class="imgArea">{$board_top_image}</div>
+            
+            
+            
+            
+        </div>
+    </div>
+ <div class="review-board-4" >
+ <div class="grid-wrap g1">
+	<div class="grid">
+       <div class="gutter-sizer"></div>     
+
+        
+    <ul module="board_list_4">
+        <!--
+            $count = 18
+            $subject_cut = 22
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+             <li class="grid-item">
+               <div class="box">
+                    <div class="main">
+                            <div class="cont-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+
+                            <div class="cont-box-all">
+                              <div class="cont-box"><a href="/board/product-01/read.html{$param_read}"><span class="pro-thumb-img">{$product_img}</span>{$subject}</a></div>
+
+                              <div class="review-cont">{$content}</div>
+                              <div class="review-point"><img src="/Unfold/resource/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                              <div class="writer">{$writer}</div>
+
+                              <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+                              <div class="{$hit_display|display} count"><i class="ti-eye"></i><span>view</span><span class="txtNum">{$hit_count}</span></div>
+                            </div><!--cont-box-all-->
+                          </div>
+               </div>
+            </li>
+              <li class="grid-item">
+               <div class="box">
+                    <div class="main">
+                            <div class="cont-img"><a href="/board/product-01/read.html{$param_read}" class="imgLink"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+
+                            <div class="cont-box-all">
+                              <div class="cont-box"><a href="/board/product-01/read.html{$param_read}"><span class="pro-thumb-img">{$product_img}</span>{$subject}</a></div>
+
+                              <div class="review-cont">{$content}</div>
+                              <div class="review-point"><img src="/Unfold/resource/ico_point{$point_count}.png" alt="{$point_count}점"></div>
+                              <div class="writer">{$writer}</div>
+
+                              <div class="{$date_display|display} date"><span class="txtNum">{$write_date}</span></div>
+
+                              <div class="{$hit_display|display} count"><i class="ti-eye"></i><span>view</span><span class="txtNum">{$hit_count}</span></div>
+                            </div><!--cont-box-all-->
+                          </div>
+               </div>
+            </li>
+    </ul>
+
+    <p module="board_empty_4" class="empty {$empty_display|display}">{$empty_message}</p>
+</div>
+
+     
+       </div><!--grid-->
+ </div><!--grid-wrap g1-->
+     
+  </div><!--class="review-board"-->   
+<div module="board_paging_4" class="ec-base-paginate typeList">
+    <!--
+        $count = 5
+    -->
+    <a href="{$param_prev}" class="btnPrev">이전 페이지</a>
+    <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    </ol>
+    <a href="{$param_next}" class="btnNext">다음 페이지</a>
+</div>
+    <div module="board_ButtonList_4" class="ec-base-button {$write_display|display}"style="width: 95%;margin: 0 auto; margin-bottom:30px;">
+        <a href="/board/product-01/write.html{$param_write}" class="btnStrong">글쓰기</a>
+    </div>
+<div module="board_search_4">
+    <!--@css(/css/module/board/search.css)-->
+    <fieldset class="boardSearch">
+        <legend>게시물 검색</legend>
+        <div class="category">{$form.product_category_selector} {$form.search_date} {$form.search_key}</div>
+        <div class="ec-base-field">{$form.search} <button class="btnStrong" onclick="{$action_search}">검색</button></div>
+    </fieldset>
+</div>
+
+
+<script>
+	/*카페셋팅할경우 모두 @js 형식으로 호출하세요*/
+	var $grid=$('.grid').masonry({
+        percentPosition: true,
+        gutter: '.gutter-sizer',
+       itemSelector: '.grid-item',
+       transitionDuration: '0.2s'
+	});
+
+	$('.grid-wrap').DB_masonry_more({});
+	/*옵션값 셋팅이 없는경우 디폴트값으로 아래처럼 적용됩니다.*/
+		$('.grid-wrap').DB_masonry_more({
+			initNum:24,            //최초보이는갯수
+			clickOpenNum:5,       //클리시오픈갯수
+			speed:300,            //이동속도
+			delay:200             //딜레이시간
+		});
+	/**/
+</script>
+    

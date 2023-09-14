@@ -1,0 +1,12 @@
+.shopmain-wrap { width: 45%; cursor: pointer; display: float; border: 1px solid #EDEDED;  padding: 10px;  float: left; margin: 1% 0 1% 0;  padding: 35px 10px 0 20px;  transition: all 0.4s ease-out;  margin-left: 1.7%;}
+.shopmain-wrap:hover { border: 1px solid #959595; transition: all 0.4s ease-out;}
+.shopmain-wrap a:hover {opacity:1;}
+#myshopMain {  margin: 11px 0 0; overflow: hidden;    width: 103.3%;
+    margin-left: -2%;}
+.line-bold{  width: 33px;  border-top: 1px solid #959595; transition: all 0.4s ease-out;}
+.line-bold:hover {  border-top: 6px solid #000; transition: all 0.4s ease-out;}
+#myshopMain .shopMain { height: 67px;transition: all 0.4s ease-out;  padding-top: 10px;  margin-bottom: 32px; }
+#myshopMain .shopMain h3 { padding:0 0 5px; font-size:12px; color:#333; font-weight:normal; }
+#myshopMain .shopMain h3 strong { font-size:22px; padding:0 8px 0 0; }
+#myshopMain .shopMain h3 a:hover { text-decoration:none; }
+#myshopMain .shopMain p a { font-size:12px; line-height:18px; color:#8f8f8f; }

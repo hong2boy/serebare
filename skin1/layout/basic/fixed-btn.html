@@ -1,0 +1,68 @@
+    <!--카카오채팅-->
+    <div class="kakaochat" style="position:fixed; bottom:130px; right:30px; overflow:hidden; z-index:999999;">
+ 		 <a href="https://api.happytalk.io/api/kakao/chat_open?yid=%40%EB%8D%B0%EC%9D%B4%ED%95%8F&site_id=1000219311&category_id=85867&division_id=85868" target="_blank"><img src="//ecimg.cafe24img.com/pg526b93115472059/handy23/web/upload/category/editor/2018/07/24/consult_small_yellow_pc.png"></a>
+    </div>
+
+<div class="wrap_fixed_updown">
+                <div class="fixed_updown_btn">
+                    <button type="button" class="btn_updown btn_up">맨위로</button>
+                    <button type="button" class="btn_updown btn_down">맨아래로</button>
+                </div>
+    </div>
+    <div id="footer" style="clear:both;"></div>
+    <script>
+
+      (function($){
+
+        $(document).ready(function() {
+
+          var win = $(window);
+          var fixedUpdownBtn = $('.fixed_updown_btn');
+          if (win.scrollTop() > 5) {
+            fixedUpdownBtn.fadeIn();
+          }
+          win.scroll(function() {
+            if (win.scrollTop() > 5) {
+              fixedUpdownBtn.fadeIn();
+            } else {
+              fixedUpdownBtn.fadeOut();
+            }
+          });
+          $('.fixed_updown_btn .btn_up').click(function() {
+            $('html, body').animate({
+              scrollTop: 0
+            }, 500);
+          });
+          $('.fixed_updown_btn .btn_down').click(function() {
+            var scrollDown = $('body, #wrap').height();
+            var footerScrollTop = $('#footer').offset().top;
+            var winHeight = win.height();
+            if (winHeight < scrollDown) {
+              $('html, body').animate({
+                scrollTop: footerScrollTop
+              }, 500);
+            } else {
+              $('html, body').animate({
+                scrollTop: scrollDown
+              }, 500);
+            }
+          });
+
+          function fixedUpdown() {
+            var wrapUpdown = $('.wrap_fixed_updown');
+            if (win.width() < 1670) {
+              wrapUpdown.addClass('fixed');
+            } else {
+              wrapUpdown.removeClass('fixed');
+            }
+          }
+          fixedUpdown();
+          win.resize(function() {
+            fixedUpdown();
+          });
+
+        });
+
+      })(jQuery);
+
+    </script>

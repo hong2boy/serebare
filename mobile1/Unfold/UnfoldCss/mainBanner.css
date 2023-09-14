@@ -1,0 +1,47 @@
+#mainBanner { background: #3e3e3e; } /*상단 띠배너 백그라운드 컬러 변경 부분입니다. 왼쪽에서 '#76777b' 의 컬러코드값을 변경해 주세요.*/
+#mainBanner p a  { color: #fff; } /*상단 띠배너 폰트 컬러 변경 부분입니다. 왼쪽에서 '#fff' 의 컬러코드값을 변경해 주세요.*/
+#mainBanner i { color: #fff; }  /*상단 띠배너 닫기 버튼 컬러 변경 부분입니다. 왼쪽에서 '#fff' 의 컬러코드값을 변경해 주세요.*/
+
+
+#mainBanner {
+
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  position: fixed;
+
+  z-index: 1067;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+
+#mainBanner p a {
+  color: #fff;
+  font-size: 12px;
+}
+
+#mainBanner .bar-close {
+  width: 20px;
+  position: absolute;
+  right: 12px;
+  top: 1px;
+}
+
+#mainBanner .bar-close img {
+  width: 16px;
+}
+
+#mainBanner i {
+  font-size: 13px;
+}
+
+/* 메인 띠배너 오픈시*/
+#mainBanner.bannerShow {
+  display: block;
+}
+#tabProduct.on.bannerShow{
+  transform: translateY(35px);
+}

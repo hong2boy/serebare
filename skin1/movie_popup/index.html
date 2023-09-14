@@ -1,0 +1,59 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+    .movie-pop-bg {position:absolute; top:0; left:0;    margin: 0;}
+    
+   </style>
+   <script language="JavaScript">
+<!-- JavaScript
+ var tag = document.createElement('script');
+      tag.src = "http://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          playerVars: { 'autoplay': 1, 'controls': 0,'autohide':1,'wmode':'opaque' },
+          videoId: 'V0nbZIhbeos',
+          events: {
+            'onReady': onPlayerReady}
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.mute();
+      }
+// - JavaScript - -->
+</script>
+</head>
+<body>
+
+<!-- /////////////////////////  링크 변경부분입니다. 아래에서 href="#" 의 따옴표 안쪽으로 링크를 넣어주세요.  /////////////////////////-->          
+    
+         <p class="movie-pop-bg"><a href="#" target="_top"><img src="/Unfold/images/popupMovie/pop-movie-bg.png"></a></p>
+    
+<!-- /////////////////////////  링크 변경부분입니다. END  /////////////////////////-->   
+    
+    
+ <!--/////// 동영상 부분입니다. 유튜브 영상 페이지에서 영상 하단의 "공유" 클릭 후 생성된 코드 중
+ ex : https://youtu.be/0000000  의  youtu.be/ 뒷 부분만 복사하여  오른쪽 0000000 표기 부분 위치, https://www.youtube.com/embed/00000000?~~~~~~playlist=00000000   의 아래 동일한 글 영역에 붙여넣기 해주세요. (2개 모두 넣어주셔야 합니다.)
+///////////--> 
+
+    
+        <iframe class="youtube-player" id="player" src="https://www.youtube.com/embed/jBz1UCnDZS8?version=3&start=70&end=120&playlist=jBz1UCnDZS8&wmode=opaque&autoplay=1&controls=0&enablejsapi=1&showinfo=0&rel=0&modestbranding=1&loop=1&vq=highres" frameborder="0" allowfullscreen style="width:570px; height:320px;"><div id="player"></div></iframe>
+    
+<!-- /////////////////////////  동영상 변경부분입니다.END /////////////////////////////////////-->    
+    
+    
+    
+         <div module="Popup_Footer">{$footer}</div>
+
+</body>
+</html>

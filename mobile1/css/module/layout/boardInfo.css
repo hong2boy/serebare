@@ -1,0 +1,14 @@
+.xans-board-mainpackage { margin:14px 7px 0; background:#fff;text-align:center; }
+.xans-board-mainpackage a { display:block; color:#1b1b1b; font-weight:700;  font-size:15px; }
+.xans-board-mainpackage li { border-bottom:1px solid #d5d5d5; height:60px; line-height:60px;}
+
+/* 게시판 메인 (일반) */
+.xans-board-mainpackage div.xans-layout-boardinfo li { }
+
+/* 게시판 메인 (운영일지) */
+.xans-board-mainpackage div.xans-layout-opdiarybanner li {}
+
+#contents { padding:0 0 29px; }
+
+/* 게시판 메인 (긴급문의) */
+.xans-board-mainpackage div.xans-layout-sosbanner li { }

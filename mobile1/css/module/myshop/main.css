@@ -1,0 +1,6 @@
+.xans-myshop-main {background:#fff; text-align: center; padding:0; margin-left:-3px;}
+.xans-myshop-main li { background-size:20px; background-repeat:no-repeat; margin: 5px 0 0px 3px; background-position:12px;  border: 1px solid #EAEAEA;  display:inline-block; zoom:1; *display:inline; width: 47%;}
+.xans-myshop-main li:first-child { }
+.xans-myshop-main li a { display:block; position:relative; padding:14px; font-size:11px;  font-weight:bold;   padding: 12px 14px;}
+.xans-myshop-main li a:after { display:block; position:absolute; top:12px; right:12px; content:""; width:20px; height:20px;   }
+.xans-myshop-main li .count { color:#508bed; }

@@ -1,0 +1,79 @@
+
+
+<div id="quick-wrap">
+  <div class="quick-side-bar">
+
+    <ul>
+      <li>
+        <a class = "quickButton">
+          <span class="quick-icon quick-icon-00">
+            <i class="ti-eye"></i>
+          </span>
+        </a>
+      </li>
+
+      <li>
+        <a class = "quickButton">
+          <span class="quick-icon quick-icon-01">
+            <i class="ti-headphone-alt"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="quick-arrow-wrap top"> <!--to-direction top-->
+      <span class="quick-arrow-top"><!--to-top-->
+        <span class="quick-arrow quick-arrow-up"><i class="ti-angle-double-up"></i></span>
+      </span>
+      <span class="quick-arrow-bottom"><!--to-bottom-->
+        <span class="quick-arrow quick-arrow-down"><i class="ti-angle-double-down"></i></span>
+      </span>
+    </div><!--quick-arrow-wrap top-->
+  </div><!--quick-side-bar-->
+  <div class="quick-content quick-content-00">
+
+                <h2 class="recent"><a href="/product/recent_view_product.html">최근 본 상품</a></h2>
+        <div module="Layout_productRecent">
+            <!--@css(/css/module/layout/productRecent.css)-->
+
+
+            <ul>
+                <li class="{$disp_recent|display}">
+                    <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /><span>{$name}..</span></a>
+                </li>
+                <li class="{$disp_recent|display}">
+                    <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /><span>{$name}..</span></a>
+                </li>
+            </ul>
+            <p class="player"><img src="/Unfold/resource/btn_recent_prev.png" alt="이전 제품" class="prev" /><img src="/Unfold/resource/btn_recent_next.png" alt="다음 제품" class="next" /></p>
+        </div>
+
+
+
+
+    <p class="message">최근본 상품 내역이 없습니다.</p>
+
+
+
+
+
+  </div><!--quick-content quick-content-00-->
+
+
+  <div class="quick-content quick-content-01">
+
+          <div class="r-quick-cs">
+           <!--고객센터 정보--> <!--@import(/layout/basic/cscenter.html)-->
+          </div>
+
+
+
+        <div class="talk-qa-btn-comm">
+         <!-- 상담 버튼 --> <!--@import(/layout/basic/csbutton.html)-->
+         </div> <!--talk-qa-btn-->
+
+
+
+
+  </div><!--quick-content quick-content-01-->
+</div><!--quick-wrap-->

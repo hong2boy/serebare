@@ -1,0 +1,116 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+    .xans-member-login .login fieldset .id, .xans-member-login .login fieldset .password {width:100%;box-sizing: border-box;}
+    .btnLogin, a.btnLogin {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+
+     border-radius: 0px;
+    text-align: center;
+
+    font-size: 15px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    height: 50px !important;
+    line-height: 50px !important;
+}
+    img, fieldset {
+    border: none;
+    vertical-align: middle;
+}
+    .ec-base-box.typeThin {
+    border-width:0px;
+    border-color: #fff;
+}
+    .xans-member-login .login fieldset input[type=text], .xans-member-login .login fieldset input[type=password] {height:40px; line-height:40px;}
+    .xans-member-login .login fieldset .id, .xans-member-login .login fieldset .password { border-radius:0;}
+
+    </style>
+
+
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>로그인</strong></li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2>로그인</h2>
+</div>
+
+<div module="member_login" class="ec-base-box typeThin">
+    <!--@css(/css/module/member/login.css)-->
+    <!--
+        $defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html
+    -->
+    <div class="login">
+
+        <fieldset>
+            <legend>회원로그인</legend>
+            <label class="id ePlaceholder" title="아이디">{$form.member_id}</label>
+            <label class="password ePlaceholder" title="비밀번호">{$form.member_passwd}</label>
+
+            <p href="#none" class="btnLogin" onclick="{$action_func_login}">로그인</p>
+
+               <ul class="list-001">
+                  <li><a href="/member/join.html" style="display:block">회원가입</a></li>
+
+
+            </ul>
+
+
+            <p class="security">
+                {$form.member_check_save_id}
+                {$form.member_check_secret_connect}
+            </p>
+             <ul class="list-002">
+
+                <li><a href="/member/id/find_id.html">아이디찾기</a></li>
+                <li><a href="/member/passwd/find_passwd_info.html">비밀번호찾기</a></li>
+
+            </ul>
+
+            <ul class="snsArea">
+                <li class="{$display_naver|display} naver">
+                    <a href="#none" onclick="{$naver_func_login}"><img src="/Unfold/resource/login-naver.png?ver=2" alt="네이버 로그인" /><span>네이버 로그인</span></a>
+                </li>
+                <li class="{$display_facebook|display} facebook">
+                    <a href="#none" onclick="{$facebook_func_login}"><img src="/Unfold/resource/login-facebook.png" alt="페이스북 로그인" /><span>페이스북 로그인</span></a>
+                </li>
+
+                <li class="{$display_kakao|display} kakao">
+                    <a href="#none" onclick="{$kakao_func_login}"><img src="/Unfold/resource/login-kakao.png" alt="카카오계정 로그인" /><span>카카오 로그인</span></a>
+                </li>
+
+            </ul>
+
+
+
+            <p class="link {$display_nomember|display}" id="noMemberWrap">
+                비회원님도 상품구매가 가능하나 다양한<br />회원혜택에서 제외됩니다.
+                <a href="{$returnUrl}" class="btnEm" onclick="{$action_nomember_order}">비회원구매</a>
+            </p>
+        </fieldset>
+    </div>
+</div>
+
+<div module="MyShop_OrderHistoryNologin" class="ec-base-box typeThin" style="width: 370px;  margin: 0 auto;border: 1px solid #000000;  padding: 35px 45px;">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/list.html
+    -->
+
+    <p>비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</p>
+    <dl class="ec-base-desc gBlank20">
+        <dt>{$form_label.order_name}</dt><dd>{$form.order_name}</dd>
+        <dt>{$form_label.order_id}</dt><dd>{$form.order_id}</dd>
+        <dt>{$form_label.order_password}</dt><dd>{$form.order_password}</dd>
+    </dl>
+    <p class="ec-base-button gColumn"><button type="submit" class="btnNormal sizeM">조회</button></p>
+</div>

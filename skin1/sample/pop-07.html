@@ -1,0 +1,45 @@
+<!--@import(/layout/basic/head-tag.html)-->    
+
+    <style>
+        body,code { background:none;}
+        *, *:after, *:before {
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+     box-sizing: content-box; }
+          .pop-wrap-01 {background:#525252; text-align:center; width:450px; height:250px; cursor:pointer; position:relative;}
+         .pop-wrap-01 span {color:#64e2ff; font-size:30px;display:inline-block;transition: all 0.4s ease-out;     font-size: 25px;
+    margin-bottom: 5px;}
+         .pop-wrap-01 a {color:#fff; font-size:35px;display:inline-block; *display:inline; zoom:1; }
+
+          .pop-wrap-01 i {}
+         .pop-wrap-01 .arrow-i {float:right;}
+        .pop-wrap-01 h2 { transition: all 0.4s ease-out;    width:100%;
+    font-weight:100;}
+         .pop-wrap-01 h2:hover span{color:#6aa2e0; transition: all 0.4s ease-out;}
+         .pop-wrap-01 h4 {color:#fff;     font-weight: normal; width:100%:
+ }
+        .all-ap {   
+     position:absolute;
+  	top: 50%; width:100%;
+	left: 50%;
+	transform: translate(-50%,-50%);}
+        .ti-flickr {color:#fff; font-size:18px; }
+     </style>
+<body>
+
+    <div class="pop-wrap-01">
+        <div class="all-ap">
+           <p><i class="ti-flickr"></i></p>
+         <h2><span>[ <strong>제품 후기</strong>페이지 입니다 ]</span></h2>
+         <h4>
+                  후기는 일반 게시판 형태가 아닌 핀보드 방식으로 <br />
+                   이미지가 노출될 수 있도록 처리하였습니다.<br />
+                  포토후기와 글후기가 함께 오류 없이 노출되며,<br />
+                  상단 부분에는 텍스트 및 이미지 등록이 가능합니다.
+         </h4>
+          </div>
+      </div>
+<div style="clear:both"></div>
+	<div module="Popup_Footer">{$footer}</div>
+</body>
+</html>

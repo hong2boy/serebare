@@ -1,0 +1,23 @@
+.xans-product-normalmenu { margin:0;  }
+.xans-product-normalmenu .title { margin:0 0 17px; }
+.xans-product-normalmenu .title h3 { font-weight:normal; font-size:20px; color:#2e2e2e; text-align:center; }
+.xans-product-normalmenu .function { overflow:hidden; text-align:right; line-height:38px; }
+.xans-product-normalmenu .function .btnCompare { display:inline-block; padding:0 12px; border-left:1px solid #d7d5d5; }
+.xans-product-normalmenu .function .btnCompare:hover { color:#008bcc; text-decoration:none; }
+.xans-product-normalmenu .prdCount { float:left; padding:0 0 0 8px; color:#008bcc; }
+.xans-product-normalmenu ul {font-size:0;}
+.xans-product-normalmenu ul#type li { display:inline-block; *display:inline; zoom:1;   vertical-align: top; padding: 3px 10px; background:#fff;    height: 20px;
+    line-height: 20px;
+   transition: all 0.4s ease-out;
+    font-size: 11px;}
+.xans-product-normalmenu ul#type li:first-child { background:none; }
+.xans-product-normalmenu ul#type li a { color:#c9c9c9; }
+.xans-product-normalmenu ul#type li a:hover { color:#008bcc; text-decoration:none; }
+.xans-product-normalmenu fieldset { margin:-1px 0 0; padding:7px 12px; border:1px solid #d7d5d6; text-align:right; background:#fbf9fa; }
+.xans-product-normalmenu fieldset select { height:24px; }
+
+
+.xans-product-normalmenu ul#type li:hover {background:#292929; transition: all 0.4s ease-out;}
+.xans-product-normalmenu ul#type li:hover a {color:#fff;}
+.xans-product-normalmenu ul li a {display:inline-block; *display:inline; zoom:1;   vertical-align: top;     width: 100%;
+    height: 100%;}
